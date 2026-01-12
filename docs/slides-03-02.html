@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.33">
 
-  <title>CSc 110 Computer Programming I – More on Functions (class slides)</title>
+  <title>CSc 345 Analysis of Discrete Structures – More on Functions (class slides)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -238,7 +238,7 @@
 </section>
 <section id="function-comments-1" class="slide level2">
 <h2>Function Comments</h2>
-<div id="923a9fd9" class="cell" data-execution_count="1">
+<div id="eef2c22d" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="co">'''</span></span>
 <span id="cb1-2"><a></a><span class="co">Prof Lynam</span></span>
 <span id="cb1-3"><a></a><span class="co">CSC110</span></span>
@@ -313,7 +313,7 @@
 </section>
 <section id="global-or-local" class="slide level2">
 <h2>Global or Local?</h2>
-<div id="332e8a1f" class="cell" data-execution_count="2">
+<div id="169a48d7" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>a <span class="op">=</span> <span class="dv">10</span>               <span class="co"># What are the global and local variables?</span></span>
 <span id="cb3-2"><a></a>b <span class="op">=</span> <span class="dv">5</span>                <span class="co"># Is the output of the two programs the same </span></span>
 <span id="cb3-3"><a></a>                     <span class="co"># or different?</span></span>
@@ -326,7 +326,7 @@
 <span id="cb3-10"><a></a>main()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>vs.</p>
-<div id="9ff63630" class="cell" data-execution_count="3">
+<div id="d46cadb8" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="kw">def</span> <span class="bu">sum</span>(a, b):</span>
 <span id="cb4-2"><a></a>  <span class="cf">return</span> a <span class="op">+</span> b</span>
 <span id="cb4-3"><a></a></span>
@@ -346,7 +346,7 @@
 </section>
 <section id="argument-or-parameter" class="slide level2">
 <h2>Argument or Parameter?</h2>
-<div id="86d789db" class="cell" data-execution_count="4">
+<div id="817559a1" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="co"># The parameters are a and b</span></span>
 <span id="cb5-2"><a></a><span class="kw">def</span> add(a, b):</span>
 <span id="cb5-3"><a></a>    <span class="cf">return</span> a<span class="op">+</span>b</span>
@@ -374,7 +374,7 @@
 </section>
 <section id="write-a-function-1" class="slide level2">
 <h2>Write a function</h2>
-<div id="2fc7e78a" class="cell" data-execution_count="5">
+<div id="6000d373" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="kw">def</span> tell_story_a(hero, villain, repetition):</span>
 <span id="cb6-2"><a></a>  <span class="co">'''</span></span>
 <span id="cb6-3"><a></a><span class="co">  This function prints a bedtime story a specified number of times</span></span>

@@ -1,17 +1,17 @@
 ---
-title: "CSc 110 Computer Programming I"
+title: "CSc 345 Analysis of Discrete Structures"
 website:
   google-analytics: "G-X5E6TNHNQ5"
   cookie-consent: true
 ---
 
-# Welcome to CSc 110!
+# Welcome to CSc 345: Analysis of Discrete Structures!
 
-This is an introduction to programming with an emphasis on solving problems drawn from a variety of domains. Topics include basic control and data structures, problem solving strategies, and software development tools and techniques. Specifically, the Python programming language will be taught.
+The course is an introduction to and analysis of algorithms and characteristics of discrete structures. Course topics include algorithm analysis techniques, recurrence relations, structural induction, hierarchical structures, graphs, hashing, and sorting.
 
--   D2L: [d2l](https://d2l.arizona.edu/d2l/home/1658797)
--   Gradescope: [Gradescope](https://www.gradescope.com/courses/1092416) 
--   Piazza: [Piazza](https://piazza.com/arizona/fall2025/csc110002) (Access code: glxonh1ytum)
+-   D2L: [d2l](https://d2l.arizona.edu/d2l/home/1725364)
+-   Gradescope: [Gradescope](https://www.gradescope.com/courses/1221227) 
+-   Piazza: [Piazza](https://piazza.com/arizona/spring2026/csc345/home)
 
 Where to start:
 
@@ -21,7 +21,7 @@ Where to start:
 
 # Instructor Information
 
--   Professor Hudson Lynam
+-   Hudson Lynam
 
     -   Office: [Gould-Simpson](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 823
 
@@ -29,4 +29,4 @@ Where to start:
 
     -   Office hours (open door, drop in, my office [GS](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 823):
 
-         -    `Monday 3:00pm-3:50pm,  and Wednesday 12:50pm-1:50pm`.
+         -    `Tuesday and Thursday 2:00pm-3:00pm

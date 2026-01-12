@@ -1,372 +1,708 @@
----
-title: "Syllabus"
-author: "Hudson Lynam (he/him/his)"
-date: "Fall 2025"
-output:
-  html_document: default
-  pdf_document: default
-subtitle: CSc 110 Computer Programming I
----
-
-```{r setup, include=FALSE}
-library(tidyverse)
-library(readxl)
-library(knitr)
-schedule <- read_excel("schedule.xlsx") %>% 
-  mutate(formatted_date = format(date, "%a, %b %d"),
-         formatted_start = format(week_start, "%b %d"))
-
-assignments <- read_excel("assessment_schedule.xlsx") %>% 
-  mutate(formatted_date = format(due_date, "%A, %B %d, %Y"))
-
-opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-```
-
-# Location and Times
-
-This course is scheduled to be an in-person course, meeting in-person three times a week. Your meeting time should be:
-
-Biol Sci West, Rm 301, Monday, Wednesday, and Friday 2:00pm-2:50pm
-This is a four-unit course, meeting in the lecture room three times a week. The weekly in-person lab sessions are flexible, meaning students have a number of time slots to choose from. To schedule your lab session go to the weekly lab session spreadsheet.
-
-Attendance is expected and required.
-
-If you need an exception due to a medical or visa issue, please reach out to the DRC or instructor.
-
-
-# Description of Course
-
-An introduction to programming with an emphasis on solving problems drawn from a variety of domains. Topics include basic control and data structures, problem solving strategies, and software development tools and techniques.
-
-# Course Prerequisites
-
-The prerequisite is a C or better in College Algebra or CSc 101 or appropriate math placement score.
-
-# Instructor, Teaching Staff, and Contact Information
-
--   Instructor:
-    -   Professor Hudson Lynam
-        -   Office: [Gould-Simpson](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 823
-        -   Email: hlynam\@arizona.edu
-        -   Instructor Website:[https://professorlynam.github.io/csc110/](https://professorlynam.github.io/csc110/)
-        -   Office hours (open door, drop in, my office [GS](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 823):
-            -   `Monday and Wednesday 12:50pm-`1:50pm
-            
-There will also be many undergraduate TAs. See [TAs and Office Hours](tas.html)!
-
-# Course Format and Teaching Methods
-
-The course will have three required meeting times per-week. The in-class experience will consist of a combination of lecture, programming demonstrations (live coding), and in-class activities. This course will use active learning, peer-teaching, and flipped-classroom teaching techniques.
-
-By active learning, I mean that class time won't be just 50 minutes of me talking. Instead, class meetings will include a number of in-class activities (ICAs) for you to work on individually and/or in a group. Thus, you can spend some time **actively** learning (instead of passively listening to the instructor).
-
-By peer-teaching, I mean that you will have opportunities to learn from your classmates, and vice-versa. In many of the in-class activities, you will be able to work on groups and help each-other when necessary.
-
-By flipped-classroom, I mean that you will often be assigned reading or other material to complete before attending each class meeting time. By doing this, you will come to class with (at least some) preparation. This will hopefully result in more class time allocated towards active learning!
-
-# Obtaining Help
-
--   Academic advising: If you have questions about your academic progress this semester, or your chosen degree program, consider contacting your department's academic advisor(s). Your academic advisor and the Advising Resource Center can guide you toward university resources to help you succeed. Computer Science major students are encouraged to visit <https://www.cs.arizona.edu/undergraduate/advising> for advisor contact information.
--   CS Help Desk: The Computer Science IT team can help students with department technology issues including logging into/resetting your Lectura account, printing in the 930 lab, etc. You can submit a ticket for help by visiting the Computer Science Lab Helpdesk (note, requires UA login).
--   Life challenges: If you are experiencing unexpected barriers to your success in your courses, please note the Dean of Students Office is a central support resource for all students and may be helpful. The Dean of Students Office can be reached at 520-621-7057 or DOS-deanofstudents\@email.arizona.edu.
--   Physical and mental-health challenges: If you are facing physical or mental health challenges this semester, please note that Campus Health provides quality medical and mental health care. For medical appointments, call (520-621-9202. For After Hours care, call (520) 570-7898. For the Counseling & Psych Services (CAPS) 24/7 hotline, call (520) 621-3334.
--   UA Ombuds: The UA Ombuds Office (<https://ombuds.arizona.edu/>) helps with a wide variety of issues, concerns, questions, conflicts, and challenges. The primary mission of the Ombuds Program is to assist individuals in resolving conflict, facilitating communication, and assisting the University by surfacing issues and providing feedback on emerging or systemic concerns. Communications with the Ombuds Committee are informal and off-the-record. The Ombuds Committee is governed by the following standards: (1) Confidentiality; (2) Impartiality: (3) Informality; and (4) Independence.
-
-# Course Objectives
-
-By the end of the semester, you should be able to write complete, well-structured programs in python.
-
-# Expected Learning Outcomes
-
-This successful CSc 110 student will be able to:
-
--   Use variables, control structures, basic data types, lists, dictionaries, file I/O, and functions to write correct 100 - 200 line programs.
--   Decompose a problem into an appropriate set of functions, loops, conditionals, and/or other control flow.
--   Find bugs when code is not working as expected using print statements and computational thinking skills, and will be able to understand and resolve errors.
--   Write clean, well-structured, and readable code.
--   Follow a provided style guide to write clean, well-structured, and readable code.
--   Explain the conceptual memory model underlying the data types covered in class, and demonstrate the ability to convert integers and text to and from binary.
-
-(These learning outcomes are derived from ones developed by Allison Obourn, Ben Dicken, Adriana Picoral and other faculty at the UA).
-
-# Absence and Class Participation Policy
-
-Participating in the course and attending lectures and other course events are vital to the learning process. As such, attendance is required at all lectures.
-
-Absences may affect a student's final course grade. If you anticipate being absent, are unexpectedly absent, or are unable to participate in class online activities, please contact me as soon as possible. To request a disability-related accommodation to this attendance policy, please contact the Disability Resource Center at (520) 621-3268 or drc-info\@email.arizona.edu. If you are experiencing unexpected barriers to your success in your courses, the Dean of Students Office is a central support resource for all students and may be helpful. The Dean of Students Office is located in the Robert L. Nugent Building, room 100, or call 520-621-7057.
-
-If you have any problems coming to class and decide to drop this course, see an advisor if it is after the drop period. Advisors will provide options and alternatives as appropriate for individual student situations.
-
-The UA's policy concerning Class Attendance, Participation, and Administrative Drops is available at <https://catalog.arizona.edu/policy/courses-credit/courses/class-attendance-participation>.
-
-The UA policy regarding absences for any sincerely held religious belief, observance or practice will be accommodated where reasonable: [http://policy.arizona.edu/human-resources/religious-accommodation-policy](<http://policy.arizona.edu/human-resources/religious-accommodation-policy>.
-
-Absences pre-approved by the UA Dean of Students (or dean's designee) will be honored. See <https://deanofstudents.arizona.edu/policies/attendance-policies-and-practices>.
-
-## Administrative Drops
-
-Every semester, students enroll in introductory CS classes but do not submit any work, resulting in a grade of `E` at the end of the term. To prevent this, at the end of the **second week** (Sep 5), all students who have not submitted/completed **three or more** of the following will be administratively dropped:
-
-1.  Aug 27 quiz
-2.  Class presence on Aug 29
-3.  Sep 3 quiz
-4.  Class presence on Sep 5
-5.  [Module 1 Programming Problem 1](assignments-01.html)
-6.  [Module 1 Programming Problem 2](assignments-01.html)
-
-Nov 2 is the last day instructors may administratively drop students. Check more important dates [here](https://registrar.arizona.edu/dates-and-deadlines).
-
-## Illnesses and Emergencies
-
--   If you feel sick, or may have been in contact with someone who is infectious, stay home. Except for seeking medical care, avoid contact with others and do not travel.
--   Notify your instructor if you will be missing up to one week of course meetings and/or assignment deadlines.
--   If you must miss the equivalent of more than one week of class and have an emergency, the Dean of Students is the proper office to contact (DOS-deanofstudents\@email.arizona.edu). The Dean of Students considers the following as qualified emergencies: the birth of a child, mental health hospitalization, domestic violence matter, house fire, hospitalization for physical health (concussion/emergency surgery/coma/COVID-19 complications/ICU), death of immediate family, Title IX matters, etc.
--   Please understand that there is no guarantee of an extension when you are absent from class and/or miss a deadline.
-
-**Statement on compliance with COVID-19 mitigation guidelines:** As we enter the semester, our health and safety remain the university's highest priority. To protect the health of everyone in this class, students are required to follow the university guidelines on COVID-19 mitigation. Please visit [www.covid19.arizona.edu](https://www.covid19.arizona.edu/).
-
-
-# Makeup Policy for Students Who Register Late
-
-If you register after the first class meeting you may make up missed assignments within your first week of attendance. 
-
-# Course Communications
-
-All online communication will be conducted through my official UA e-mail address (hlynam\@arizona.edu), D2L, and Piazza. Ask questions on [Piazza](https://piazza.com/arizona/fall2025/csc110002) when you have questions about assignments, quizzes, and exams (has private options). Email the instructor only when you have logistics-related questions.
-
-
-# Required Texts or Readings
-
-All readings, videos, and assignment instructions will be available in the course website.
-
--   Course D2L: <https://d2l.arizona.edu/d2l/home/1658797>
--   Course Gradescope: <https://www.gradescope.com/courses/1092416>
--   Course website: <https://professorlynam.github.io/csc110/>
--   Piazza: <hhttps://piazza.com/arizona/fall2025/csc110002> (Access code: glxonh1ytum)
-
-# Assignments and Examinations: Schedule/Due Dates
-
-The breakdown of grades in this course is as follows:
-
--   45% exams
--   20% weekly quizzes
--   10% programming problems
--   10% short programming projects
--   15% programming projects
-
-There will be three exams (each 15%) throughout the course (including two midterms and one final exam), for a total of 45%. These exams may cover material from class, the programming assignments, the projects, and the readings. If you score higher on Midterm 2 than on Midterm 1, we will use your Midterm 2 grade for both. However, we will not do the reverse — a higher Midterm 1 grade will not replace a lower Midterm 2 grade. If you would like an exam regraded, we reserve the right to regrade the entire exam, not only the parts you might question.
-
-The midterm exams will be on:
-
--   Midterm Exam 1 - `r schedule %>% filter(exam == "Midterm 1" & term == "fall 2025") %>% pull(formatted_date)`
--   Midterm Exam 2 - `r schedule %>% filter(exam == "Midterm 2" & term == "fall 2025") %>% pull(formatted_date)`
-
-You must keep theses dates available. Do not schedule any flights, travel plans, or other conflicts with these exams.
-
-Weekly quizzes will be held every Wednesday (unless otherwise noted). There will be a total of 12 quizzes. Make-up quizzes will not be offered, however, your 2 lowest quiz scores will be dropped when calculating your final grade. 
-
-::: {.callout-important}
-## What counts as advanced code
-
-Students must complete programming projects using only the concepts and materials covered in class or assigned readings. Using external or advanced code beyond this scope is not permitted unless explicitly approved by the instructor or teaching assistants.
-
-Both an autograder and manual review will be used to detect unauthorized advanced content. Deductions will be applied accordingly. In cases where these deductions result in a negative score, the project grade will be adjusted to zero. Otherwise, your Gradescope score will be your final grade.
-:::
-
-## Late Work
-
-For programming problems, short projects and long projects, late work is NOT accepted.
-
-## Extra Credit
-
-Up to 1 point of extra credit will be awarded to students who come to office hours in person. Check our office hours schedule on the website [TAs and Office Hours](tas.html) and ask the TA or instructor to submit your points to gradescope. 
-
-You are required to ask a question and/or work on an assignment or practice problem with the TA or instructor to receive 0.5 points for each office hour attendance. It is your responsibility to ensure the TA or instructor enter your 0.5 points on gradescope during the session. Instructors will not award you these points at a later date, do not email instructors about getting points at a later date (for example, if you forget to ask the TA to enter your office hour points on gradescope). 
-
-Your first TA office visit should take place before the Midterm 1 date, and the second visit should take place before the Midterm 2 date.
-
-## Final Examination
-
-The final exam is worth 15%.
-
-The final exam date, time and room is: Friday, December 12th, 6:00pm-8:00pm Room TBA
-
-You must keep this time available. Do not schedule any flights, travel plans, or other conflicts with this exam.
-
-See also Final Exam Regulations and Schedule: <https://registrar.arizona.edu/finals>
-
-# Grading Scale and Policies
-
-The instructor and teaching staff will do their best to have grades back to students within 1 week. This includes, but is not limited to, grades for exams, projects, programming assignments, attendance, and quizzes. Once a grade has been entered for a particular item on the digital grade-book, students have at most **5 days to dispute** the grade. This includes disputes related to excuses such as sickness, personal matters, dean's excuses, etc. If 5 days pass and there has not been such a request, the grade is final. Appeals submitted after this period will not be considered by the instructor or teaching staff under any circumstances. Please review your grades promptly and plan accordingly.
-
-The correspondence between percentage grade and numeric grade is as follows:
-
--   Greater or equal to 90% at least an A
--   Greater or equal to 80% at least a B
--   Greater or equal to 70% at least a C
--   Greater or equal to 60% at least a D
--   Anything less, at least an E / F
-
-Department of Computer Science Grading Policy:
-
-1.  Instructors will explicitly promise when every assignment and exam will be graded and returned to students. These promised dates will appear in the syllabus, associated with the corresponding due dates and exam dates.
-2.  Graded homework will be returned before the next homework is due.
-3.  Exams will be returned "promptly", as defined by the instructor (and as promised in the syllabus).
-4.  Grading delays beyond promised return-by dates will be announced as soon as possible with an explanation for the delay.
-
-## Incomplete (I) or Withdrawal (W):
-
-Requests for incomplete (I) or withdrawal (W) must be made in accordance with University policies, which are available at <https://catalog.arizona.edu/policy/courses-credit/grading/grading-system>.
-
-# Honors Credit
-
-Students wishing to contract this course for Honors Credit should e-mail me to set up an appointment to discuss the terms of the contact and to sign the Honors Course Contract Request Form. The form is available at <http://www.honors.arizona.edu/honors-contracts>.
-
-# Scheduled Topics/Activities
-
-List topics in logical units in a weekly/daily schedule, including assignment due dates and exam dates can be found on the [course website](schedule.html).
-
-```{r}
-schedule %>% 
-  filter(term == "fall 2025") %>% 
-  select(week_number, formatted_start, module, topic) %>% 
-  kable(col.names = c("Week", "Start Date", "Module", "Topic"))
-```
-
-## Holidays
-
-We won't have classes due to university-wide holidays on the following dates:
-
-```{r}
-schedule %>% 
-  filter(!is.na(holiday) & term == "fall 2025") %>% 
-  select(week_number, formatted_date, holiday) %>% 
-  kable(col.names = c("Week", "Date", "Holiday"))
-```
-
-## Assignment due dates
-
-```{r}
-assignments %>% 
-  select(assessment, formatted_date, due_time) %>% 
-  kable(col.names = c("Assessment", "Date", "Time/Location"))
-```
-
-
-# Transferable Career Skills
-
-In this course, we will focus on the following competencies: 
-
--   **Technology**: Students will use technology to design and write complete, well-structured programs in Python.
--   **Teamwork**: The course will include lectures, in-class discussions, and activities, with a strong emphasis on teamwork through group work that requires collaboration with other students during class.
--   **Communication**: Students are encouraged to emphasize communication by interacting with teaching assistants and using various channels, such as office hours, Gradescope, class discussions, and Piazza, to stay updated on course materials.
-
-
-# Department of Computer Science Code of Conduct
-
-The Department of Computer Science is committed to providing and maintaining a supportive educational environment for all. We strive to be welcoming and inclusive, respect privacy and confidentiality, behave respectfully and courteously, and practice intellectual honesty. Disruptive behaviors (such as physical or emotional harassment, dismissive attitudes, and abuse of department resources) will not be tolerated. The complete Code of Conduct is available on our department web site. We expect that you will adhere to this code, as well as the UA Student Code of Conduct, while you are a member of this class.
-
-# Classroom Behavior Policy
-
-To foster a positive learning environment, students and instructors have a shared responsibility. We want a safe, welcoming, and inclusive environment where all of us feel comfortable with each other and where we can challenge ourselves to succeed. To that end, our focus is on the tasks at hand and not on extraneous activities (e.g., texting, chatting, reading a newspaper, making phone calls, web surfing, etc.).
-
-Students are asked to refrain from disruptive conversations with people sitting around them during lecture. Students observed engaging in disruptive activity will be asked to cease this behavior. Those who continue to disrupt the class will be asked to leave lecture or discussion and may be reported to the Dean of Students.
-
-## Threatening Behavior Policy
-
-The UA Threatening Behavior by Students Policy prohibits threats of physical harm to any member of the University community, including to oneself. See <http://policy.arizona.edu/education-and-student-affairs/threatening-behavior-students>.
-
-# Accessibility and Accommodations
-
-At the University of Arizona, we strive to make learning experiences as accessible as possible. If you anticipate or experience barriers based on disability or pregnancy, please contact the Disability Resource Center (520-621-3268, <https://drc.arizona.edu/>) to establish reasonable accommodations.
-
-# Code of Academic Integrity
-
-Students are encouraged to share intellectual views and discuss freely the principles and applications of course materials. However, graded work/exercises must be the product of independent effort unless otherwise instructed. 
-
-**All work you submit for grading in this course must be your own. Submitting work that includes many (minor and/or major) components that are not your own work is considered plagiarism. Instances of plagiarism will be reported to the Dean of Students.**
-
-Keep in mind that all assignments and practice problems provided in this course are meant to help you to practice the skills that you will need for graded work (including on paper quizzes and exams), so it is generally in your best interest to avoid taking shortcuts even on these assignments.
-
-Students are expected to adhere to the UA Code of Academic Integrity as described in the UA General Catalog. See <https://deanofstudents.arizona.edu/student-rights-responsibilities/academic-integrity>.
-
-Uploading material from this course to a website other than D2L is strictly prohibited and will be considered a violation of the course policy and a violation of the code of academic integrity. Obtaining material associated with this course (or previous offerings of this course) on a site other than D2L and the course website, such as Chegg, Course Hero, etc. or accessing these sites during a quiz or exam is a violation of the code of academic integrity. Any student determined to have uploaded or accessed material in an unauthorized manner will be reported to the Dean of Students for a Code of Academic Integrity violation, with a recommended sanction of a failing grade in the course (faculty can replace this sanction with whatever sanction they plan to use for their course).
-
-The University Libraries have some excellent tips for avoiding plagiarism, available at $$http://new.library.arizona.edu/research/citing/plagiarism$$(<http://new.library.arizona.edu/research/citing/plagiarism>.
-
-Selling class notes and/or other course materials to other students or to a third party for resale is not permitted without the instructor's express written consent. Violations to this and other course rules are subject to the Code of Academic Integrity and may result in course sanctions. Additionally, students who use D2L or UA e-mail to sell or buy these copyrighted materials are subject to Code of Conduct Violations for misuse of student e-mail addresses. This conduct may also constitute copyright infringement.
-
-# Nondiscrimination and Anti-harassment Policy
-
-The University of Arizona is committed to creating and maintaining an environment free of discrimination. In support of this commitment, the University prohibits discrimination, including harassment and retaliation, based on a protected classification, including race, color, religion, sex, national origin, age, disability, veteran status, sexual orientation, gender identity, or genetic information. For more information, including how to report a concern, please see <http://policy.arizona.edu/human-resources/nondiscrimination-and-anti-harassment-policy>.
-
-Our classroom is a place where everyone is encouraged to express well-formed opinions and their reasons for those opinions. We also want to create a tolerant and open environment where such opinions can be expressed without resorting to bullying or discrimination of others.
-
-# Additional Resources for Students
-
-UA Academic policies and procedures are available at <http://catalog.arizona.edu/policies>. Visit the UArizona COVID-19 page for regular updates.
-
-## Campus Health
-
-<http://www.health.arizona.edu/>
-
-Campus Health provides quality medical and mental health care services through virtual and in-person care. Voluntary, free, and convenient COVID-19 testing is available for students on Main Campus. COVID-19 vaccine is available for all students at Campus Health.
-
-Phone: 520-621-9202
-
-## Counseling and Psych Services (CAPS)
-
-<https://health.arizona.edu/counseling-psych-services>
-
-CAPS provides mental health care, including short-term counseling services.
-
-Phone: 520-621-3334
-
-## The Dean of Students Office's Student Assistance Program
-
-<https://deanofstudents.arizona.edu/support/student-assistance>
-
-Student Assistance helps students manage crises, life traumas, and other barriers that impede success. The staff addresses the needs of students who experience issues related to social adjustment, academic challenges, psychological health, physical health, victimization, and relationship issues, through a variety of interventions, referrals, and follow up services.
-
-Email: DOS-deanofstudents\@email.arizona.edu Phone: 520-621-7057
-
-## Survivor Advocacy Program
-
-<https://survivoradvocacy.arizona.edu/>
-
-The Survivor Advocacy Program provides confidential support and advocacy services to student survivors of sexual and gender-based violence. The Program can also advise students about relevant non-UA resources available within the local community for support.
-
-Email: survivoradvocacy\@email.arizona.edu Phone: 520-621-5767
-
-# Campus Pantry
-
-Any student who has difficulty affording groceries or accessing sufficient food to eat every day, or who lacks a safe and stable place to live and believes this may affect their performance in the course, is urged to contact the Dean of Students for support. In addition, the University of Arizona Campus Pantry is open for students to receive supplemental groceries at no cost. Please see their website at: [campuspantry.arizona.edu](https://campuspantry.arizona.edu/) for open times.
-
-Furthermore, please notify me if you are comfortable in doing so. This will enable me to provide any resources that I may possess.
-
-# Pronouns and Preferred Names
-
-This course affirms people of all gender expressions and gender identities. If you prefer to be called a different name than what is on the class roster, please let me know. Feel free to correct instructors on your pronoun. If you have any questions or concerns, please do not hesitate to contact me directly in class or via email (instructor email). If you wish to change your preferred name or pronoun in the UAccess system, please use the following guidelines:
-
--   **Preferred name**: University of Arizona students may choose to identify themselves within the University community using a preferred first name that differs from their official/legal name. A student's preferred name will appear instead of the person's official/legal first name in select University-related systems and documents, provided that the name is not being used for the purpose of misrepresentation. Students are able to update their preferred names in UAccess.
--   **Pronouns**: Students may designate pronouns they use to identify themselves. Instructors and staff are encouraged to use pronouns for people that they use for themselves as a sign of respect and inclusion. Students are able to update and edit their pronouns in UAccess.
-
-More information on updating your preferred name and pronouns is available on the Office of the Registrar site at <https://www.registrar.arizona.edu/>.
-
-# Safety on Campus and in the Classroom
-
-For a list of emergency procedures for all types of incidents, please visit the website of the Critical Incident Response Team (CIRT): <https://cirt.arizona.edu/case-emergency/overview>
-
-Also watch the video available at <https://arizona.sabacloud.com/Saba/Web_spf/NA7P1PRD161/app/me/ledetail;spf-url=common%2Flearningeventdetail%2Fcrtfy000000000003841>
-
-# Confidentiality of Student Records
-
-Student education records are considered confidential and may not be released without the written consent of the student. For more information visit <http://www.registrar.arizona.edu/ferpa>.
-
-# Land Acknowledgement Statement
-
-We respectfully acknowledge the University of Arizona is on the land and territories of Indigenous peoples. Today, Arizona is home to 22 federally recognized tribes, with Tucson being home to the O'odham and the Yaqui. Committed to diversity and inclusion, the University strives to build sustainable relationships with sovereign Native Nations and Indigenous communities through education offerings, partnerships, and community service.
-
-# Subject to Change Statement
-
-Information contained in the course syllabus, other than the grade and absence policy, may be subject to change with advance notice, as deemed appropriate by the instructor.
+> **CSc 345 (Analysis of Discrete Structures) Syllabus M Pacheco ILC, Rm
+> 140, TuTh 3:30pm-4:45pm**
+>
+> **Course Description**
+>
+> Introduction to and analysis of algorithms and characteristics of
+> discrete structures. Course topics include algorithm analysis
+> techniques, recurrence relations, structural induction, hierarchical
+> structures, graphs, hashing, and sorting.
+>
+> **Course Prerequisites**
+>
+> Computer Science Advanced Standing. CSc 210 and CSc 244. In
+> particular, you are expected to know the Java programming language; to
+> be able to design, code, and debug programs consisting of hundreds of
+> lines of object-oriented code; to understand and use basic common
+> algorithms (e.g., sorting) and data structures (e.g., stacks); and to
+> understand and apply basics of discrete mathematics, including the
+> interpretation and creation of formal proofs.
+>
+> **Instructor and Contact Information**
+>
+> Professor Hudson Lynam, GS Room 823, 775-750-5038, hlynam@arizona.edu
+>
+> Office Hours: Tuesday & Thursday, 2:00pm-3:00pm
+>
+> For additional information (including TA office hour information),
+> please refer to the course website.
+>
+> **Course Format and Teaching Methods**
+>
+> This course is scheduled to be an in-person course, meeting in-person
+> two times a week. Your meeting time should be:
+>
+> M Pacheco ILC, Rm 140, Tuesday, Thursday 2:00pm-2:50pm\
+> This is a three-unit course, meeting in the lecture room two times a
+> week. Attendance is expected and required. If you need an exception
+> due to a medical or visa issue, please reach out to the DRC or
+> instructor.
+>
+> **Course Objectives**
+>
+> Students will learn about data structures, algorithms, and algorithm
+> design and analysis techniques beyond those covered in CSc 120, 210,
+> and 244.
+
++-----------------------------------+-----------------------------------+
+| > •\                              | > Learn more complex data         |
+| > •                               | > structures and algorithms than  |
+|                                   | > those covered in CSc 120, 210,  |
+| •                                 | > and 244.                        |
+|                                   | >                                 |
+|                                   | > Be able to select appropriate   |
+|                                   | > data structures and/or          |
+|                                   | > algorithms to solve specific    |
+|                                   | > problems, and explain the       |
+|                                   | > advantages and disadvantages of |
+|                                   | > the choices as compared to      |
+|                                   | > alternative solutions, and      |
+|                                   | > Construct implementations of    |
+|                                   | > those data structures and       |
+|                                   | > algorithms in the programming   |
+|                                   | > language used in the course.    |
++===================================+===================================+
++-----------------------------------+-----------------------------------+
+
+> **Expected Learning Outcomes**
+>
+> A successful CSc 345 student will be able to:
+
++-----------------------------------+-----------------------------------+
+| > •\                              | > Asymptotically analyze          |
+| > •\                              | > iterative and recursive         |
+| > •\                              | > algorithms\                     |
+| > •                               | > Follow a provided style guide   |
+|                                   | > to write clean,                 |
+|                                   | > well-structured, and readable   |
+|                                   | > code.                           |
+|                                   | >                                 |
+|                                   | > Construct and compare           |
+|                                   | > hierarchical structures and     |
+|                                   | > graphs                          |
+|                                   | >                                 |
+|                                   | > Identify, analyze, and compare  |
+|                                   | > common searching and sorting    |
+|                                   | > algorithms                      |
++===================================+===================================+
++-----------------------------------+-----------------------------------+
+
+> **Transferable Career Skills**
+
+  -----------------------------------------------------------------------
+  1                                   1/14/26
+  ----------------------------------- -----------------------------------
+
+  -----------------------------------------------------------------------
+
+> **National Association of Colleges and Employers (NACE) Career
+> Readiness:**
+>
+> Career readiness is a foundation from which to demonstrate requisite
+> core competencies that broadly prepare the college-educated for
+> success in the workplace and lifelong career management. For new
+> college graduates, career readiness is key to ensuring successful
+> entrance into the workforce.
+>
+> There are each of which can be demonstrated in a variety of ways.\"
+> (NACE, 2
+
++-----------------------------------+-----------------------------------+
+| > ●\                              | > Career & Self Development\      |
+| > ●\                              | > Communication\                  |
+| > ●\                              | > Critical Thinking\              |
+| > ●\                              | > Equity & Inclusion\             |
+| > ●\                              | > Leadership\                     |
+| > ●\                              | > Professionalism\                |
+| > ●\                              | > Teamwork\                       |
+| > ●                               | > Technology                      |
++===================================+===================================+
++-----------------------------------+-----------------------------------+
+
+> In this course, we will focus on the following competencies:
+
++-----------------------------------+-----------------------------------+
+| > •\                              | > **Technology**: You will        |
+| > •                               | > implement and analyze a variety |
+|                                   | > of algorithms and data          |
+| •                                 | > structures to develop software  |
+|                                   | > applications.                   |
+|                                   | >                                 |
+|                                   | > **Communication**: In addition  |
+|                                   | > to interacting with the         |
+|                                   | > instructor and TAs in-person,   |
+|                                   | > by email, and via the class     |
+|                                   | > discussion board, you will      |
+|                                   | > describe your software          |
+|                                   | > implementations via in-line     |
+|                                   | > documentation and you will      |
+|                                   | > construct clearly-written       |
+|                                   | > solutions to homework problems. |
+|                                   | >                                 |
+|                                   | > **Critical Thinking**: You will |
+|                                   | > construct solutions to          |
+|                                   | > algorithmic problems to meet    |
+|                                   | > specific outcomes such as       |
+|                                   | > expected worst-case execution   |
+|                                   | > and storage efficiencies.       |
++===================================+===================================+
++-----------------------------------+-----------------------------------+
+
+> **Makeup Policy for Students Who Register Late**
+>
+> If you enroll in the class after the first graded activity has been
+> assigned, please see the instructor to discuss possible adjustments to
+> due dates.
+>
+> **Administrative Drops**
+>
+> Every semester, students enroll in CS classes but do not submit any
+> work, resulting in a grade of \'E\' at the end of the term. To prevent
+> this, after the end of the second week, I will be administratively
+> dropping all students who have not submitted any activities collected
+> prior to the no-W drop date.
+>
+> **Course Communications**\
+> All online communication will be conducted through my official UA
+> e-mail address (hlynam@arizona.edu), D2L, and Piazza. Ask questions on
+> Piazza when you have questions about assignments, quizzes, and exams
+> (has private options). Email the instructor only when you have
+> logistics-related questions.
+>
+> **Required Texts or Readings**
+>
+> All readings, videos, and assignment instructions will be available on
+> the course website.
+>
+> Course D2L:\
+> Course Gradescope: Course website:\
+> Piazza:
+>
+> **Assignments and Examinations: Schedule/Due Dates**
+>
+> The breakdown of grades in this course is as follows:
+>
+> 30% Midterm Exams (2)
+>
+> 2 1/14/26
+>
+> 24% Programs (4)\
+> 20% Homeworks (4)\
+> 16% Final Exam\
+> 10% Quizzes (best 5)
+>
+> There will be two midterm exams (each 15%) and a final exam (16%)
+> throughout the course, for a total of 46%. At the end of the semester,
+> if at least two-thirds of the students have submitted class\
+> evaluations, we replaced your lowest midterm exam score with a
+> percentage-equivalent copy of your final exam score, if the final exam
+> score is higher than your lowest midterm score. We do this not only to
+> encourage class evaluations, but also to reward you for demonstrating
+> an improved mastery of the material over the course of the semester.
+> If you would like an exam regraded, we reserve the right to regrade
+> the entire exam, not only the parts you might question.
+>
+> There are a number of quizzes that will be scheduled throughout the
+> semester depending on how quickly course material is covered. However
+> many end up being given, only the best 5 will count toward the quiz
+> category. Make-up quizzes are not given.
+>
+> **Final Examination**
+>
+> The final exam is worth 16%.
+>
+> The final exam date, time and room is: 05/13/26, 3:30pm-5:30pm, M
+> Pacheco ILC, Rm 140.
+>
+> You must keep this time available. Do not schedule any flights, travel
+> plans, or other conflicts with this exam.
+>
+> See also: Final Exam Regulations and Final Exam Schedule:
+>
+> **Grading Scale and Policies**\
+> The instructor and teaching staff will do their best to have grades
+> back to students within 1 week. This includes, but is not limited to,
+> grades for exams, projects, programming assignments, attendance, and
+> quizzes. Once a grade has been entered for a particular item on the
+> digital grade-book, students have **at most 5 days** to dispute the
+> grade. This includes disputes related to excuses such as sickness,
+> personal matters, dean's excuses, etc. If 5 days pass and there has
+> not been such a request, the grade is final.
+>
+> Appeals submitted after this period will not be considered by the
+> instructor or teaching staff under any circumstances. Please review
+> your grades promptly and plan accordingly.
+>
+> The correspondence between percentage grade and numeric grade is as
+> follows:
+>
+> Greater or equal to 90% at least an A
+>
+> Greater or equal to 80% at least a B
+>
+> Greater or equal to 70% at least a C
+>
+> Greater or equal to 60% at least a D
+>
+> Anything less, at least an E / F
+>
+> Department of Computer Science Grading Policy:
+>
+> Instructors will explicitly promise when every assignment and exam
+> will be graded and returned to students. These promised dates will
+> appear in the syllabus, associated with the corresponding due dates
+> and exam dates.
+>
+> Graded homework will be returned before the next homework is due.
+> Exams will be returned "promptly",
+>
+> 3 1/14/26
+>
+> as defined by the instructor (and as promised in the syllabus).
+> Grading delays beyond promised return-by dates will be announced as
+> soon as possible with an explanation for the delay.
+>
+> Late work is accepted for homeworks and programming assignments up to
+> two days after the assigned due date. If it is submitted within one
+> day of the assigned due date, there will be a 20% deduction from the
+> final grade for the assignment. If it is submitted on the second day
+> after the assigned due date, there will be a 40% deduction from the
+> final grade for the assignment. After two days have passed beyond the
+> assigned due date, no submissions will be accepted.
+>
+> **Incomplete (I) or Withdrawal (W):**
+>
+> Requests for incomplete (I) or withdrawal (W) must be made in
+> accordance with University policies, which are available at
+>
+> **Topic Outlin**
+>
+> Topics may be added, removed, or reordered as time and circumstances
+> dictate, however, advance warning will be provided in such cases.
+
++-----------------------+-----------------------+-----------------------+
+| > Topics and          |                       |                       |
+| > Subtopics           |                       |                       |
++=======================+=======================+=======================+
+| > Topic 1 (Review) A: | > 5, (S) 4.1-4.3,     | > Review Lists,       |
+| > Basic Data          | > Lecture             | > Stacks, and Queues. |
+| > Structures          |                       | > Describe n-D Array  |
+|                       |                       | > Storage             |
+|                       |                       | > Considerations.     |
++-----------------------+-----------------------+-----------------------+
+| > Topic 1 B:          | > 3, (S) 2            | > Know summation,     |
+| > Mathematics and     |                       | > sequence, and       |
+| > Proofs              |                       | > logarithmic\        |
+|                       |                       | > identities.         |
+|                       |                       | > Identify and follow |
+|                       |                       | > the logic of        |
+|                       |                       | > fundamental         |
+|                       |                       | > varieties of        |
+|                       |                       | > proofs.             |
++-----------------------+-----------------------+-----------------------+
+| > Topic 2 (Algorithm\ | > Lecture             | > Identify which      |
+| > Analysis) A:        |                       | > algorithm           |
+| > Step-Counting and   |                       | > components are most |
+| > Code Profiling      |                       | > responsible for     |
+|                       |                       | > efficiency. Use a   |
+|                       |                       | > code profiler to    |
+|                       |                       | > identify            |
+|                       |                       | > inefficient code.   |
++-----------------------+-----------------------+-----------------------+
+| > Topic 2 B:          | > 4, (S) 3            | > Know and apply      |
+| > Asymptotic Analysis |                       | > Big-O and related   |
+|                       |                       | > concepts. Perform   |
+|                       |                       | > asymptotic analysis |
+|                       |                       | > of algorithms.      |
++-----------------------+-----------------------+-----------------------+
+| > Topic 2 C:          | > 3.6, (S) 14.2,      | > Demonstrate ability |
+| > Recurrence          | > Lecture             | > to solve recurrence |
+| > Relations           |                       | > relations. Know and |
+|                       |                       | > apply the Master    |
+|                       |                       | > Theorem.            |
++-----------------------+-----------------------+-----------------------+
+| > Topic 3 (Graphs) A: | > 14.1, (S) 11.1-11.2 | > Compare and         |
+| > Representations     |                       | > contrast adjacency  |
+|                       |                       | > lists and matrices  |
++-----------------------+-----------------------+-----------------------+
+| > Topic 3 B: Graph    | > 14.3, (S) 11.3-\    | > Perform and         |
+| > Algorithms          | > 11.4, 14.5, 14.8,   | > implement BFS and   |
+|                       | > 14.6, 14.4,\        | > DFS traversals.     |
+|                       | > Lecture             | > Describe and apply  |
+|                       |                       | > SSSP and APSP       |
+|                       |                       | > algorithms.         |
+|                       |                       | > Construct MCSTs.    |
+|                       |                       | > Construct a         |
+|                       |                       | > topological sort.   |
++-----------------------+-----------------------+-----------------------+
+| > Topic 4 (Internal   | > 8, (S) 7            | > Demonstrate mastery |
+| > Sorting) A:         |                       | > of common           |
+| > In-memory-only      |                       | > algorithms.         |
+| > Sorting             |                       | > Identify algorithm  |
+|                       |                       | > strengths and       |
+|                       |                       | > weaknesses.         |
++-----------------------+-----------------------+-----------------------+
+| > Topic 5 (External   | > 9.6, (S) 8.5,       | > Use external        |
+| > Sorting)            | > Lecture             | > sorting to solve    |
+|                       |                       | > large data          |
+|                       |                       | > arrangement         |
+|                       |                       | > problems.           |
++-----------------------+-----------------------+-----------------------+
+| > Topic 6 (Linear     | > \(S\) 9.1, Lecture  | Compare searching     |
+| > Searching &         |                       | ordered and unordered |
+| > Hashing) A: Linear\ |                       | sequences.            |
+| > Searching           |                       |                       |
++-----------------------+-----------------------+-----------------------+
+| > Topic 6 B:          | > 15.1                | > Produce             |
+| > Skiplists           |                       | > probabilistically   |
+|                       |                       | > logarthmic seach    |
+|                       |                       | > time from LLs.      |
++-----------------------+-----------------------+-----------------------+
+| Topic 6 C: Internal   | > 10, (S) 9.4         | > Describe the        |
+| Hashing               |                       | > characteristics of  |
+|                       |                       | > a good hash         |
+|                       |                       | > function, and       |
+|                       |                       | > describe efficient  |
+|                       |                       | > implementations of  |
+|                       |                       | > hash tables and     |
+|                       |                       | > operations.         |
++-----------------------+-----------------------+-----------------------+
+| > Topic 7 A: Review   | 7.11, (S) 5.1-5.4     | > Summarize basic     |
+| > of Binary Search    |                       | > properties and      |
+| > Trees               |                       | > operations of BST,  |
+|                       |                       | > and compare and     |
+|                       |                       | > contrast            |
+|                       |                       | > implementation      |
+|                       |                       | > options.            |
++-----------------------+-----------------------+-----------------------+
+| > Topic 7 B: AVL and  | \(S\) 13.2, Lecture   | > Distiguish these    |
+| > Splay Trees         |                       | > structures from     |
+|                       |                       | > BSTs, show an       |
+|                       |                       | > understanding of    |
+|                       |                       | > basic operations,   |
+|                       |                       | > and demonstrate the |
+|                       |                       | > ability to create   |
+|                       |                       | > efficient           |
+|                       |                       | > implementations.    |
++-----------------------+-----------------------+-----------------------+
+| > Topic 7 C: Optimal  | > Lecture             | > Describe Optimal    |
+| > Binary Search Trees |                       | > BSTs.               |
++-----------------------+-----------------------+-----------------------+
+| > Topic 8 A: Beyond   | > 12.5, 12.6, Lecture | > Contrast these      |
+| > Binary Search Trees |                       | > trees with BSTs and |
+|                       |                       | > their kin,\         |
+|                       |                       | > understand an       |
+|                       |                       | > extension to        |
+|                       |                       | > B-trees, and decide |
+|                       |                       | > when                |
++-----------------------+-----------------------+-----------------------+
+
+> 4 1/14/26
+
++-----------------------+-----------------------+-----------------------+
+|                       |                       | > to use trees or     |
+|                       |                       | > hashing for         |
+|                       |                       | > searching.          |
++=======================+=======================+=======================+
+| > Topic 8 B: Binary   | 7.17, (S) 5.5, 8.12,  | > Know operations and |
+| > Heaps               | Lecture               | > preferred           |
+|                       |                       | > implementation, and |
+|                       |                       | > apply heaps to      |
+|                       |                       | > sorting.            |
++-----------------------+-----------------------+-----------------------+
+| Topic 9: Algorithm    | \(S\) 14.2, (S) 16.1, | > Categorize          |
+| Families              | Lecture               | > algorithms by       |
+|                       |                       | > family of common    |
+|                       |                       | > solution algorithm. |
++-----------------------+-----------------------+-----------------------+
+| > Topic 10 A: P, NP,  | \(S\) 17.2, Lecture   | > Define, P, NP,      |
+| > and Undecidability  |                       | > NP-Hard, and        |
+|                       |                       | > NP-Complete, and    |
+|                       |                       | > name algorithms     |
+|                       |                       | > from each category. |
++-----------------------+-----------------------+-----------------------+
+| > Topic 10 B:         | \(S\) 17.3, Lecture   | > Distinguish         |
+| > Undecidable         |                       | > solvable and        |
+| > Problems            |                       | > unsolvable          |
+|                       |                       | > problems.           |
++-----------------------+-----------------------+-----------------------+
+| > Topic 11 A: Regular | > Lecture             | > Define languages    |
+| > Expressions         |                       | > using regular       |
+|                       |                       | > expressions.        |
++-----------------------+-----------------------+-----------------------+
+| Topic 11 B: Finite    | > Lecture             | > Define FSMs.        |
+| Automata              |                       |                       |
++-----------------------+-----------------------+-----------------------+
+
+> **Scheduled Topic and Activities**
+
++-----------------+-----------------+-----------------+-----------------+
+| ***Week***      | ***Date***      | ***Scheduled    | >               |
+|                 |                 | Topics***       |  ***Assignments |
+|                 |                 |                 | > and Due       |
+|                 |                 |                 | > Dates***      |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *1*           | > *Jan 15*      | > *Syllabus*    |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *2*           | > *Jan 20*      | > *1*           | > *Homework #1  |
+|                 |                 |                 | > Assigned*     |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *2*           | > *Jan 22*      | > *1, 2*        |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *3*           | > *Jan 27*      | > *2*           | *Homework #1    |
+|                 |                 |                 | Due, Program #1 |
+|                 |                 |                 | Assigned*       |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *3*           | > *Jan 29*      | > *2*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *4*           | > *Feb 3*       | > *2*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *4*           | > *Feb 5*       | > *2*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *5*           | > *Feb 9*       | > *2*           | *Program #1     |
+|                 |                 |                 | Due, Homework   |
+|                 |                 |                 | #2 Assigned*    |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *5*           | > *Feb 11*      | > *3*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *6*           | > *Feb 17*      | > *3*           | *Homework #2    |
+|                 |                 |                 | Due, Program #2 |
+|                 |                 |                 | Assigned*       |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *6*           | > *Feb 19*      | > *3*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *7*           | > *Feb 24*      | > *3*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *7*           | > *Feb 26*      | > *4*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *8*           | > *Mar 3*       | > *Exam #1*     |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *8*           | > *Mar 5*       | > *4*           | > *Program #2   |
+|                 |                 |                 | > Due, Program  |
+|                 |                 |                 | > #3 Assigned*  |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *9*           | > *Mar 10 Mar   | > *No Classes*  |                 |
+|                 | > 12*           |                 |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *10*          | > *Mar 17*      | > *4*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *10*          | > *Mar 19*      | > *4*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *11*          | > *Mar 24*      | > *5*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *11*          | > *Mar 26*      | > *6*           | *Program #3     |
+|                 |                 |                 | Due, Homework   |
+|                 |                 |                 | #3 Assigned*    |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *12*          | > *Mar 31*      | > *6*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *12*          | > *Apr 2*       | > *6*           | *Homework #3    |
+|                 |                 |                 | Due, Program #4 |
+|                 |                 |                 | Assigned*       |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *13*          | > *Apr 7*       | > *6,7*         |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *13*          | > *Apr 9*       | > *7*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *14*          | > *Apr 14*      | > *7*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *14*          | > *Apr 16*      | > *Exam #2*     |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *15*          | > *Apr 21*      | > *7, 8*        | *Program #4     |
+|                 |                 |                 | Due, Homework   |
+|                 |                 |                 | #4 Assigned*    |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *15*          | > *Apr 23*      | > *8*           |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *16*          | > *Apr 28*      | > *9*           | > *Homework #4  |
+|                 |                 |                 | > Due*          |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *16*          | > *Apr 30*      | > *9, 10*       |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *17*          | > *May 5*       | > *10*          |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
+  -----------------------------------------------------------------------
+  5                                   1/14/26
+  ----------------------------------- -----------------------------------
+
+  -----------------------------------------------------------------------
+
++-----------------+-----------------+-----------------+-----------------+
+| ***Week***      | ***Date***      | ***Scheduled    | >               |
+|                 |                 | Topics***       |  ***Assignments |
+|                 |                 |                 | > and Due       |
+|                 |                 |                 | > Dates***      |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *17*          | > *May 7*       | > *No Class*    | > *Reading Day* |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
++-----------------+-----------------+-----------------+-----------------+
+| > *18*          | > *May 13*      | > *Final Exam*  |                 |
++=================+=================+=================+=================+
++-----------------+-----------------+-----------------+-----------------+
+
+> **Classroom Behavior Policy**
+>
+> To foster a positive learning environment, students and instructors
+> have a shared responsibility. We want a safe, welcoming, and inclusive
+> environment where all of us feel comfortable with each other and where
+> we can challenge ourselves to succeed. To that end, our focus is on
+> the tasks at hand and not on extraneous activities (e.g., texting,
+> chatting, reading a newspaper, making phone calls, web surfing, etc.).
+>
+> Students are asked to refrain from disruptive conversations with
+> people sitting around them during lecture. Students observed engaging
+> in disruptive activity will be asked to cease this behavior. Those who
+> continue to disrupt the class will be asked to leave lecture or
+> discussion and may be reported to the Dean of Students.
+>
+> **Safety on Campus and in the Classroom**
+
+For a list of emergency procedures for all types of incidents, please
+visit the website of the Critical Incident
+
+> Response Team (CIRT):
+>
+> Also watch the video available at
+>
+> **University-wide Policies link**\
+> Links to the following UA policies are provided here:
+
++-----------------------------------+-----------------------------------+
+| > ●\                              | > Absence and Class Participation |
+| > ●\                              | > Policies\                       |
+| > ●\                              | > Threatening Behavior Policy\    |
+| > ●\                              | > Accessibility and               |
+| > ●\                              | > Accommodations Policy\          |
+| > ●\                              | > Code of Academic Integrity\     |
+| > ●\                              | > Nondiscrimination and           |
+| > ●                               | > Anti-Harassment Policy Class    |
+|                                   | > Recordings\                     |
+|                                   | > Additional Resources\           |
+|                                   | > Preferred Names and Pronouns    |
++===================================+===================================+
++-----------------------------------+-----------------------------------+
+
+> **Department-wide Syllabus Policies and Resources link**\
+> resources are provided here, :
+
++-----------------------------------+-----------------------------------+
+| > ●\                              | > Department Code of Conduct\     |
+| > ●\                              | > Illnesses and Emergencies\      |
+| > ●\                              | > Obtaining Help\                 |
+| > ●\                              | > Confidentiality of Student      |
+| > ●                               | > Records\                        |
+|                                   | > Land Acknowledgement Statement  |
++===================================+===================================+
++-----------------------------------+-----------------------------------+
+
+> **Subject to Change Statement**
+>
+> Information contained in the course syllabus, other than the grade and
+> absence policy, may be subject to change with advance notice, as
+> deemed appropriate by the instructor.
+
+  -----------------------------------------------------------------------
+  6                                   1/14/26
+  ----------------------------------- -----------------------------------
+
+  -----------------------------------------------------------------------

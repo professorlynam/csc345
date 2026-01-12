@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.33">
 
-  <title>CSc 110 Computer Programming I – tuples (slides)</title>
+  <title>CSc 345 Analysis of Discrete Structures – tuples (slides)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -206,7 +206,7 @@
 <section id="variable-length-parameter" class="slide level2">
 <h2>Variable length parameter</h2>
 <p>Sometimes you want to handle a variable number of parameters (like <code>print</code> does)</p>
-<div id="53874208" class="cell" data-execution_count="1">
+<div id="ddcabce7" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="bu">print</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1 2 3 4 5</code></pre>
@@ -216,7 +216,7 @@
 <section id="variable-length-parameter-1" class="slide level2">
 <h2>Variable length parameter</h2>
 <p>Add a <code>*</code> before your parameter name so that it accepts a variable number of arguments, gathering them into a tuple</p>
-<div id="ae3a16cc" class="cell" data-execution_count="2">
+<div id="ca9a6841" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="kw">def</span> func(<span class="op">*</span>values):</span>
 <span id="cb3-2"><a></a>  <span class="bu">print</span>(values)</span>
 <span id="cb3-3"><a></a>  <span class="cf">for</span> v <span class="kw">in</span> values:</span>
@@ -240,7 +240,7 @@ fox</code></pre>
 <section id="variable-length-parameter-2" class="slide level2">
 <h2>Variable length parameter</h2>
 <p>Add a <code>*</code> before your parameter name so that it accepts a variable number of arguments, gathering them into a tuple</p>
-<div id="9275568b" class="cell" data-execution_count="3">
+<div id="0980c87b" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="kw">def</span> concatenate(<span class="op">*</span>values):</span>
 <span id="cb5-2"><a></a>  new_string <span class="op">=</span> <span class="st">""</span></span>
 <span id="cb5-3"><a></a>  <span class="cf">for</span> v <span class="kw">in</span> values:</span>
@@ -263,7 +263,7 @@ fox</code></pre>
 <li>It takes a variable number of arguments: <code>*values</code></li>
 <li>It returns the highest and lowest values in <code>values</code></li>
 </ol>
-<div id="5df7b8b8" class="cell" data-execution_count="4">
+<div id="1562e88b" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a><span class="cf">assert</span> min_max(<span class="dv">1</span>) <span class="op">==</span> (<span class="dv">1</span>, <span class="dv">1</span>)</span>
 <span id="cb7-2"><a></a><span class="cf">assert</span> min_max(<span class="dv">3</span>,<span class="dv">1</span>) <span class="op">==</span> (<span class="dv">1</span>, <span class="dv">3</span>)</span>
 <span id="cb7-3"><a></a><span class="cf">assert</span> min_max(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>) <span class="op">==</span> (<span class="dv">2</span>, <span class="dv">6</span>)</span>
@@ -272,7 +272,7 @@ fox</code></pre>
 </section>
 <section id="write-a-function-solution" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="001d3010" class="cell" data-execution_count="5">
+<div id="cb22a468" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="kw">def</span> min_max(<span class="op">*</span>values):</span>
 <span id="cb8-2"><a></a>  <span class="bu">max</span> <span class="op">=</span> <span class="va">None</span></span>
 <span id="cb8-3"><a></a>  <span class="bu">min</span> <span class="op">=</span> <span class="va">None</span></span>

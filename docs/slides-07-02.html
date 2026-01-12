@@ -9,7 +9,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.33">
 
-  <title>CSc 110 Computer Programming I – random (slides)</title>
+  <title>CSc 345 Analysis of Discrete Structures – random (slides)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -208,7 +208,7 @@
 <p>We need to <code>import</code> the module <code>random</code></p>
 <p>What do the functions <code>.random()</code> and <code>.randint()</code> return?</p>
 <p>Check the <a href="https://docs.python.org/3/library/random.html">documentation</a>!</p>
-<div id="d6f2a43d" class="cell" data-execution_count="1">
+<div id="164a6233" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> random</span>
 <span id="cb1-2"><a></a></span>
 <span id="cb1-3"><a></a>n <span class="op">=</span> random.random() <span class="co">#returns a random float between 0 and 1</span></span>
@@ -219,8 +219,8 @@
 <span id="cb1-8"><a></a></span>
 <span id="cb1-9"><a></a><span class="bu">print</span>(n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>0.558284820579247
-6</code></pre>
+<pre><code>0.9932478258457245
+5</code></pre>
 </div>
 </div>
 </section>
@@ -231,14 +231,14 @@
 <li>It takes a list as argument</li>
 <li>It generates a random index, and returns the item at that position</li>
 </ol>
-<div id="5be7c17e" class="cell" data-execution_count="2">
+<div id="f0f6070a" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>winner <span class="op">=</span> pick_winner([<span class="st">"Peter"</span>, <span class="st">"Joan"</span>, <span class="st">"Mary"</span>, <span class="st">"June"</span>])</span>
 <span id="cb3-2"><a></a><span class="bu">print</span>(winner)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="93a872d8" class="cell" data-execution_count="3">
+<div id="83f6d6b2" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">import</span> random</span>
 <span id="cb4-2"><a></a></span>
 <span id="cb4-3"><a></a><span class="kw">def</span> pick_winner(names):</span>
@@ -257,7 +257,7 @@
 <h2>Setting a seed</h2>
 <p>What happens when you run <code>pick_winner</code> multiple times?</p>
 <p>To get always the same result (for autograding purposes, for example) we can set a seed.</p>
-<div id="ca8dbfd5" class="cell" data-execution_count="4">
+<div id="8f20fe98" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="im">import</span> random</span>
 <span id="cb6-2"><a></a></span>
 <span id="cb6-3"><a></a><span class="kw">def</span> pick_winner(names):</span>
@@ -276,14 +276,14 @@
 <section id="write-a-function-1" class="slide level2">
 <h2>Write a function</h2>
 <p>Write a function <code>random_list</code> that takes as argument a list of <code>numbers</code>. Iterate over each list element (with a <code>while</code> loop), replacing each integer with a random number between zero and the original number. Set the seed as <code>123</code> in your function.</p>
-<div id="ad40ab79" class="cell" data-execution_count="5">
+<div id="add87ed2" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="co"># test case</span></span>
 <span id="cb8-2"><a></a><span class="cf">assert</span> random_list([<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>]) <span class="op">==</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="write-a-function-solution-1" class="slide level2">
 <h2>Write a function – solution</h2>
-<div id="3723bd68" class="cell" data-execution_count="6">
+<div id="ca2e2d7f" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a><span class="im">import</span> random</span>
 <span id="cb9-2"><a></a></span>
 <span id="cb9-3"><a></a><span class="kw">def</span> random_list(numbers):</span>
@@ -306,7 +306,7 @@
 <section id="quick-review-while-loops" class="slide level2">
 <h2>Quick Review: While Loops</h2>
 <p>Take a look at these while loops. Discuss with your table: what will be printed after each while loop runs?</p>
-<div id="32a531df" class="cell" data-execution_count="7">
+<div id="491aef04" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a>index, list_of_ints <span class="op">=</span> <span class="dv">0</span>, [<span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">9</span>, <span class="dv">17</span>, <span class="dv">8</span>, <span class="dv">99</span>]</span>
 <span id="cb11-2"><a></a><span class="cf">while</span> index <span class="op">&lt;</span> <span class="bu">len</span>(list_of_ints): <span class="co"># while loop 1</span></span>
 <span id="cb11-3"><a></a>  <span class="bu">print</span>(list_of_ints[index])</span>

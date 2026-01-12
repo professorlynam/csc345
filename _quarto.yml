@@ -3,42 +3,12 @@ project:
   output-dir: docs
   resources:
     - atwood.txt
-    - alien.txt
-    - angelou.txt
-    - atwood.txt
-    - dickinson.txt
-    - few-steps.txt
-    - fiveByFive.txt
-    - ids_and_city.txt
-    - info.txt
-    - many-steps.txt
-    - names_and_numbers.txt
-    - names.txt
-    - numbers.txt
-    - out_alien.txt
-    - poem.txt
-    - sample.txt
-    - tenSquare.txt
-    - weather.txt
-    - words.txt
-    - count_names.py
-    - cross_stitch.py
-    - guitar_new.py
-    - guitar_old.py
-    - 2d_list.png
-    - ids_and_names.csv
-    - places.csv
-    - populations.csv
-    - random_numbers.csv
-    - stocks.csv
-    - duck.jpeg
-    - list_key_value.png
 
 reticulate:
   python: "/Users/xinchen/miniforge3/envs/qenv/bin/python"
 
 website:
-  title: "CSc 110 Computer Programming I"
+  title: "CSc 345 Analysis of Discrete Structures"
   google-analytics: ""
   sidebar:
     style: "docked"
@@ -50,141 +20,22 @@ website:
         - syllabus.Rmd
         - schedule.qmd
         - tas.qmd
-        - zoom.qmd
         - grading.qmd
         - how-to-study.qmd
         - academic-integrity.qmd
-        - about.qmd
-        - about_python.md
       - section: "Programming Projects"
         contents: 
         - style.qmd
-        - project-1.qmd
-        - project-2.qmd
-        - project-3.qmd
-        - project-4.qmd
-        - project-5.qmd
-        - project-6.qmd
-        - project-7.qmd
-        - project-8.qmd
-        - project-9.qmd
-        - project-10.qmd
-        - project-11.qmd
-        - project-12.qmd
-        - project-13.qmd
-      - section: "Short Projects"
+      - section: "Homeworks"
         contents: 
         - short-projects.qmd
-        - lab01.qmd
-        - lab02.qmd
-        - lab03.qmd
-        - lab04.qmd
-        - lab05.qmd
-        - lab06.qmd
-        - lab07.qmd
-        - lab08.qmd
-        - lab09.qmd
-        - lab10.qmd
-        - lab11.qmd
-        - lab12.qmd
-      - section: "Extra Resources"
-        contents: 
-        - practice-01.qmd
-        - gradescope-errors.qmd
-      - section: "Watch"
-        contents:
-        - videos.qmd
-      - section: "Module 1 - Basics"
+      - section: "Topic 1: Review"
         contents:
         - hello.qmd
         - basics.md
         - slides-01-01.qmd
+        - slides-01-02.qmd
         - assignments-01.qmd
-      - section: "Module 2 - Functions, Operators, and Expressions"
-        contents:
-        - functions-a.md
-        - op_exp-a.md
-        - slides-02-01.qmd
-        - slides-02-02.qmd
-        - assignments-02.qmd
-      - section: "Module 3 - Decomposition and More on Functions"
-        contents: 
-        - functions.md
-        - slides-03-01.qmd
-        - slides-03-02.qmd
-        - assignments-03.qmd
-      - section: "Module 4 - Built-In Functions and Decomposition"
-        contents: 
-        - input.md
-        - slides-04-01.qmd
-        - slides-04-02.qmd
-        - assignments-04.qmd
-      - section: "Module 5 - Control Flow (if statements)"
-        contents:
-        - op_exp.md
-        - control_flow_if.md
-        - fizzbuzz.qmd
-        - slides-05-01.qmd
-        - slides-05-02.qmd
-        - slides-05-03.qmd
-        - assignments-05.qmd
-      - section: "Module 6 - Control Flow (while statements)"
-        contents:
-        - strings.qmd
-        - control_flow_while.md
-        - slides-06-01.qmd
-        - slides-06-02.qmd
-        - slides-06-03.qmd
-        - assignments-06.qmd
-      - section: "Module 7 - Data Structures (lists)"
-        contents:
-        - data_structures_list.md
-        - assignments-07.qmd
-        - slides-07-01.qmd
-        - slides-07-02.qmd
-      - section: "Module 8 - Control Flow (for statements)"
-        contents:
-        - mutability.qmd
-        - control_flow_for.md
-        - assignments-08.qmd
-        - slides-08-01.qmd
-        - slides-08-02.qmd
-      - section: "Module 9 - Data Structures (dictionaries)"
-        contents:
-        - data_structures_dict.md
-        - assignments-09.qmd
-        - slides-09-01.qmd
-        - slides-09-02.qmd
-      - section: "Module 10 - Reading and Writing Text Files"
-        contents:
-        - io.md
-        - assignments-10.qmd
-        - slides-10-01.qmd
-        - slides-10-02.qmd
-      - section: "Module 11 - Data Structures (tuples)"
-        contents:
-        - data_structures_tuples.md
-        - assignments-11.qmd
-        - slides-11-01.qmd
-        - slides-11-02.qmd
-      - section: "Module 12 - Data Structures (2D lists)"
-        contents:
-        - assignments-12.qmd
-        - slides-12-01.qmd
-      - section: "Module 13 - Data Structures (sets)"
-        contents:
-        - data_structures_sets.md
-        - assignments-13.qmd
-      - section: "Module 14 - Control Flow with different Data Structures"
-        contents:
-        - structures-review.qmd
-        - assignments-14.qmd
-      - section: "Module 15 - Handling Exceptions"
-        contents:
-        - exceptions.md
-      - section: "Module 16 - Review"
-        contents:
-        - final-review.qmd
 
 format:
   html:
