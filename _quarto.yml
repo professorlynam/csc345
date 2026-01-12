@@ -17,11 +17,9 @@ website:
     contents:
       - section: "Start Here"
         contents: 
-        - syllabus.Rmd
-        - schedule.qmd
+        - syllabus.pdf
         - tas.qmd
         - grading.qmd
-        - how-to-study.qmd
         - academic-integrity.qmd
       - section: "Programming Projects"
         contents: 
@@ -31,8 +29,7 @@ website:
         - short-projects.qmd
       - section: "Topic 1: Review"
         contents:
-        - hello.qmd
-        - basics.md
+        - grading.qmd
 
 format:
   html:

@@ -15,7 +15,7 @@ The course is an introduction to and analysis of algorithms and characteristics 
 
 Where to start:
 
--   [Syllabus](syllabus.html)
+-   [Syllabus](syllabus.pdf)
 
 -   [Schedule](schedule.html)
 
