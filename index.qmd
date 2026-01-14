@@ -12,12 +12,13 @@ The course is an introduction to and analysis of algorithms and characteristics 
 -   D2L: [d2l](https://d2l.arizona.edu/d2l/home/1725364)
 -   Gradescope: [Gradescope](https://www.gradescope.com/courses/1221227) 
 -   Piazza: [Piazza](https://piazza.com/arizona/spring2026/csc345/home)
+-   Textbook by OpenDSA Project: [Textbook](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/)
+-   Textbook by Clifford Shaffer: [Textbook](https://people.cs.vt.edu/shaffer/Book/JAVA3elatest.pdf)
 
 Where to start:
 
 -   [Syllabus](syllabus.pdf)
 
--   [Schedule](schedule.html)
 
 # Instructor Information
 

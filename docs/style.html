@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -231,13 +196,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#csc-110-style-guide" id="toc-csc-110-style-guide" class="nav-link active" data-scroll-target="#csc-110-style-guide">CSc 110: Style Guide</a>
+  <li><a href="#csc-345-style-guide" id="toc-csc-345-style-guide" class="nav-link active" data-scroll-target="#csc-345-style-guide">CSc 345: Style Guide</a>
   <ul class="collapse">
-  <li><a href="#file-comments" id="toc-file-comments" class="nav-link" data-scroll-target="#file-comments"><em>File Comments</em></a></li>
-  <li><a href="#function-comments" id="toc-function-comments" class="nav-link" data-scroll-target="#function-comments"><em>Function Comments</em></a></li>
-  <li><a href="#in-line-comments" id="toc-in-line-comments" class="nav-link" data-scroll-target="#in-line-comments"><em>In-line Comments</em></a></li>
-  <li><a href="#other-formatting" id="toc-other-formatting" class="nav-link" data-scroll-target="#other-formatting"><em>Other formatting</em></a></li>
-  <li><a href="#variables-and-line-length" id="toc-variables-and-line-length" class="nav-link" data-scroll-target="#variables-and-line-length"><em>Variables and Line Length</em></a></li>
+  <li><a href="#external-documentation" id="toc-external-documentation" class="nav-link" data-scroll-target="#external-documentation"><em>External Documentation</em></a></li>
+  <li><a href="#class-documentation" id="toc-class-documentation" class="nav-link" data-scroll-target="#class-documentation"><em>Class Documentation</em></a></li>
+  <li><a href="#internal-documentation" id="toc-internal-documentation" class="nav-link" data-scroll-target="#internal-documentation"><em>Internal Documentation</em></a></li>
+  <li><a href="#miscellaneous-requirements" id="toc-miscellaneous-requirements" class="nav-link" data-scroll-target="#miscellaneous-requirements"><em>Miscellaneous Requirements</em></a></li>
   <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
   </ul></li>
   </ul>
@@ -266,129 +230,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p><em>Coding style</em> refers to how you name your objects and functions, how you comment your code, how you use spacing throughout your code, etc. If your coding style is consistent, your code is easier to read and easier to debug as a result. Many companies enforce a specific coding style, and you won’t be able to push your code to the code base if your code does not pass the style check.</p>
-<p>This style guide is a list of <em>dos and don’ts</em> for Python programs. In this course, style will be enforced (meaning you will be graded on it) only for programming projects.</p>
-<section id="csc-110-style-guide" class="level1">
-<h1>CSc 110: Style Guide</h1>
-<section id="file-comments" class="level3">
-<h3 class="anchored" data-anchor-id="file-comments"><em>File Comments</em></h3>
-<p>File comments, also called header comments, are a <strong>required</strong> piece of your program. This belongs at the top of your code. Your name, the course title, the class section you are in, the assignment, and a brief description of your program should be located in the file comments. Below is an outline for reference.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">'''</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">Jane Doe</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">CSC110</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">Project -1</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">This program has a single function that computes the sum of two numbers.</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">'''</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><p>Note that three double-quotes surround the header comments (you can also use three single-quotes).</p></li>
-<li><p>These are docstrings; they are utilized in Python to document your code.</p></li>
-<li><p>Docstrings should be organized and easy to read.</p></li>
-<li><p><strong>Remember:</strong> you are writing code for others and your future self to read!</p></li>
-</ul>
+<p>This style guide is a list of <em>dos and don’ts</em> for the programs you develop for the course.</p>
+<section id="csc-345-style-guide" class="level1">
+<h1>CSc 345: Style Guide</h1>
+<section id="external-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="external-documentation"><em>External Documentation</em></h3>
+<p>“External” Documentation: In programming classes, the comprehensive set of documents that detail the design, development, and structure of a program are usually condensed into a comparatively brief ‘block comment’ at the top of the source code. This “external” documentation will minimally include:</p>
+<ol type="1">
+<li><p>Your name, the course name/#, assignment name/number, instructor and TA names, and due date.</p></li>
+<li><p>Detailed description (in your own words) of the problem the program was written to solve, including the techniques (e.g., algorithms, data structures) used to solve the problem.</p></li>
+<li><p>The program’s operational requirements: Which programming language and version you used, special compilation information, where the input is located on disk, etc.</p></li>
+<li><p>Required features of the assignment that you were not able to include, and/or information about bugs that are still known to exist. (Be honest and complete!)</p></li>
+</ol>
 </section>
-<section id="function-comments" class="level3">
-<h3 class="anchored" data-anchor-id="function-comments"><em>Function Comments</em></h3>
-<p>Every function created is required to have a function comment, including main. Function comments serve to describe the task the function performs. The function arguments and return should be included. Please follow the example below for reference.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> divide(x, y):</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">    This function returns the integer division of its two parameters.</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">        x: the integer dividend.</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">        y: the integer divisor.</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">        The integer division of x and y.</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">    '''</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">//</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><p>Note the triple-quotes (docstrings) that surround the function comments.</p></li>
-<li><p>The function comments are located inside the function they describe, before any code.</p></li>
-<li><p>Function comments <strong>must</strong> contain a description of the function, the arguments, and the return value.</p></li>
-<li><p>The description of parameters should include their types and purpose.</p></li>
-<li><p>The description of the return value should include its type and what it represents.</p></li>
-<li><p>If the function has no arguments or return, document that in the docstrings.</p></li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> func():</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">    This function prints the character char N times.</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">        None.</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">        None.</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">    '''</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"This is an example."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><p>The template above should be followed when there are no arguments or return values in a function.</p></li>
-<li><p>Please note that information about both arguments and return values are included in function comments, even if there are none in the function.</p></li>
-</ul>
+<section id="class-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="class-documentation"><em>Class Documentation</em></h3>
+<p>Class Documentation: When you write a support class (e.g., one not containing the application’s main() method), it will be preceded by a block comment minimally containing the following:</p>
+<ol type="1">
+<li><p>The name of the class, your name, the names of any external packages upon which your class depends, the name of the package of classes containing this class (if any), and inheritance information.</p></li>
+<li><p>An explanation of purpose of the class.</p></li>
+<li><p>Names and brief descriptions of any public class constants and variables.</p></li>
+<li><p>Names and brief descriptions of constructors, plus a list of the implemented class and instance methods.</p></li>
+</ol>
 </section>
-<section id="in-line-comments" class="level3">
-<h3 class="anchored" data-anchor-id="in-line-comments"><em>In-line Comments</em></h3>
-<p>For any line of code that is more complex (for example, a conditional statement or for loop), add an in-line comment before that line of code. In-line comments start with <code>#</code> and have a space after <code>#</code>:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> func(n):</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">    This function prints the character char N times.</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">        None.</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">        None.</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">    '''</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"This is an example."</span>)</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># checks if argument n is an even number</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(<span class="st">"even"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>If you need multiple lines of in-line comments, use line breaks, and start each line with <code>#</code> followed by a space. Remember that all lines in your code, including comments, should be 80 characters or less.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> func(numbers):</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">    This function prints the character char N times.</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">        None.</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">        None.</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co">    '''</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"This is an example."</span>)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># iterate over indices in numbers list backwards</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># starting from the ending, all the all to zero</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># with step -1</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(numbers)<span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>, <span class="op">-</span><span class="dv">1</span>):</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>      <span class="co"># check if item at i position is even</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> numbers[i] <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>        numbers.pop(i) <span class="co"># remove even item at index i</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>If you need more information on when to comment your code, read this post on <a href="https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/">Best practices for writing code comments</a>.</p>
+<section id="internal-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="internal-documentation"><em>Internal Documentation</em></h3>
+<p>The details of the program are explained by comments placed within the code. Your internal documentation will minimally include the following:</p>
+<ol type="1">
+<li><p>A ‘block comment’ will be placed at the head of every method (a.k.a. function or subprogram). This will include the method name; the purpose of the method; the method’s pre– and post–conditions; the method’s return value (if any); and a list of all parameters, including direction of information transfer (into this method, out from the method back to the calling method, or both), and their purposes. Exception: A single block comment may cover all of the getter and setter methods of a class.</p></li>
+<li><p>Meaningful identifier names. In a nod to tradition, simple loop variables may have single letter variable names, but all others will be meaningful. Never use non-standard abbreviations. If your language has accepted naming conventions, learn and follow them.</p></li>
+<li><p>Each variable and constant must have a brief comment next to its declaration that explains its purpose. This applies to all variables, as well as to fields of structure declarations.</p></li>
+<li><p>Complex sections of code and any other parts of the program that need some explanation will have comments just ahead of them or embedded in them.</p></li>
+</ol>
 </section>
-<section id="other-formatting" class="level3">
-<h3 class="anchored" data-anchor-id="other-formatting"><em>Other formatting</em></h3>
-<ul>
-<li><p>When formatting a docstring, follow the template above.</p></li>
-<li><p>Description of the function should be first.</p></li>
-<li><p>A function’s description should describe the purpose of the function, not the implementation of it.</p></li>
-<li><p>Arguments and information about them should follow the description of the function.</p></li>
-<li><p>The return value is the last piece of information in the docstring.</p></li>
-</ul>
-</section>
-<section id="variables-and-line-length" class="level3">
-<h3 class="anchored" data-anchor-id="variables-and-line-length"><em>Variables and Line Length</em></h3>
-<p>Variable names should follow typical Python style requirements. Variables should only consist of lower-case letters, numbers, and underscores. Variables should be indicative of what they represent. Below are examples of good variable naming and poor variable naming.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Good examples of variable names.</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>product <span class="op">=</span> count<span class="op">*</span><span class="dv">3</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>word <span class="op">=</span> <span class="st">"Hello"</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Zuko"</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>employee_salary <span class="op">=</span> <span class="st">"70000"</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Poor examples of variable names.</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="er">proDUCT</span> <span class="op">=</span> count<span class="op">*</span><span class="dv">3</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>word_GREETING <span class="op">=</span> <span class="st">"Hello"</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>xyz <span class="op">=</span> <span class="dv">2</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>__name <span class="op">=</span> <span class="st">"Zuko"</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>employeeSalary <span class="op">=</span> <span class="st">"70000"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Similarly to function comments, code should be easy to read. This can be done by breaking pieces of code into groups. If several lines of code relate to the same task, put them together with no spaces inbetween and use spacing to separate them from other groupings.</p>
-<p>All lines of code should be 80 characters or less. If there is a line of code that exceeds that length, it should be rewritten to be two statements. The backslash character (<code>\</code>) can also be used to continue the statement onto the next line.</p>
+<section id="miscellaneous-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="miscellaneous-requirements"><em>Miscellaneous Requirements</em></h3>
+<ol type="1">
+<li><p>Write programs with appropriate modularity; that is, create classes when appropriate, write methods that accomplish limited, well-defined tasks, etc.</p></li>
+<li><p>Public (a.k.a. ‘global’) class and instance variables will never be used in your programs for my classes unless I have approved their use for your particular situation. Use getter/setter methods instead.</p></li>
+<li><p>Be generous with your use of “white space” (blank lines) to set off logically related sections of code.</p></li>
+<li><p>Indent bodies of methods, loops and IF statements, and do so with a single, consistent style.</p></li>
+<li><p>Unconditional branching (e.g., goto statements) may not be used in your programs w/o permission.</p></li>
+</ol>
+<p>In general, if you have a choice between writing code that runs quickly and writing code that is easy to understand, make it easy to understand. Don’t sacrifice clarity for efficiency.</p>
 </section>
 <section id="reference" class="level3">
 <h3 class="anchored" data-anchor-id="reference">Reference</h3>
-<p>This guide is derived from <a href="http://proebsting.cs.arizona.edu/">Todd Proebsting</a>’s CSc 110 style guide, which is very loosely based on <a href="https://google.github.io/styleguide/pyguide.html">Google’s Style Guide</a>.</p>
+<p>This guide is derived from <a href="http://mccann.cs.arizona.edu/stylereq.pdf">Dr.&nbsp;Lester McCann’s</a>’s CSc 345 style guide.</p>
 
 
 </section>
