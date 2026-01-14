@@ -18,18 +18,14 @@ website:
       - section: "Start Here"
         contents: 
         - syllabus.pdf
-        - tas.qmd
-        - grading.qmd
         - academic-integrity.qmd
       - section: "Programming Projects"
         contents: 
         - style.qmd
       - section: "Homeworks"
         contents: 
-        - short-projects.qmd
       - section: "Topic 1: Review"
         contents:
-        - grading.qmd
 
 format:
   html:
