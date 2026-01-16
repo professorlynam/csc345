@@ -17,7 +17,8 @@ website:
     contents:
       - section: "Start Here"
         contents: 
-        - syllabus.pdf
+        - text: "Syllabus"
+          href: "syllabus.pdf"
         - academic-integrity.qmd
       - section: "Programming Projects"
         contents: 
@@ -26,6 +27,8 @@ website:
         contents: 
       - section: "Topic 1: Review"
         contents:
+        - text: "Syllabus Presentation"
+          href: "Syllabus Presentation.pptx"
 
 format:
   html:

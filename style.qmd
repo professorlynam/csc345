@@ -57,4 +57,4 @@ In general, if you have a choice between writing code that runs quickly and writ
 
 ### Reference
 
-This guide is derived from [Dr. Lester McCann's](http://mccann.cs.arizona.edu/stylereq.pdf)'s CSc 345 style guide.
+This guide is derived from [Dr. Lester McCann's](http://mccann.cs.arizona.edu/stylereq.pdf) CSc 345 style guide.
