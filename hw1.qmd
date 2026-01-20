@@ -1,0 +1,15 @@
+---
+title: "Homework 1"
+---
+
+# Directions
+
+This homework is due January 27th at 3:30pm. Section 3.7 in the DSA book and section 2.6 in the Clifford textbook contain reviews of mathematical proof techniques if you’re rusty. If you need help, recall that Piazza and office hours are available. All homeworks are individual assignments, do your own work! Write complete, legible answers to the following questions, and submit them as a PDF on Gradescope. Be sure to assign pages to problems after you upload your PDF. The total for this assignment is 55 points.
+
+# Questions
+![](hw1_pic1.png)
+![](hw1_pic2.png)
+
+The next two questions ask you to construct proofs by structural induction. Structural induction is the name for the application of an inductive proof (either weak or strong induction) to show that a property holds for some kind of structure, such as a mathematical expression or a binary tree.
+
+![](hw1_pic3.png)

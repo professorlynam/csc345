@@ -2,31 +2,16 @@
 title: "TAs and Office Hours"
 ---
 
-The Undergraduate Teaching Assistants (UGTAs or TAs) in this class are here to help. You are also welcome to send an email.
+The Teaching Assistants (UGTAs or GTAs) in this class are here to help.
 
-The best way to talk with a particular TA is via office hours, so check the schedule (scroll down this page).
+The best way to talk with a particular TA is via office hours, so check the schedule.
 
-# Course Coordinators
+# TAs and Office Hour Schedule
 
-Course coordinators are experienced UGTAs that assist the instructor with course management and will have a supervisory role with the course UGTAs.
+Shown below is the office hours schedule. The in-person office hours are hosted in Gould-Simpson 934 unless otherwise specified. Prof Lynam's office hours are in GS 823.
 
--   Ruby Gilliland (CC)
--   Chahat Walia (CC IT)
-
-# TAs
-
-Undergraduate Teaching Assistants (UGTAs) in the Department of Computer Science assist instructors in delivering undergraduate computer science courses. CS introductory courses utilize active learning and collaborative learning spaces to provide a collaborative and supportive environment for students learning programming skills. All teaching assistants have taken and excelled in the courses they support and are familiar with the material to mentor new students as they learn.
-
--   Priyansh Vaghela
--   Defne Aydin
--   Sophia Harms
+-   Moyeen Uddin (GTA).
+-   Rubin Yang (GTA).
 
 Interested in becoming a TA in the future? Check out [more information about what TAs do and how to apply](https://www.cs.arizona.edu/ugta).
 
-# Office Hours
-
-Shown below is the office hours schedule. This includes TA office hours for both sections of this course. Try to prioritize going to this section's TA office hours, but TAs from either section should be able to help you. The in-person office hours are hosted in Gould-Simpson 914. Prof Lynam's office hours are in GS 823.
-
-**Note**: the instructor and TAs are NOT supposed to help you with your assignments before/during/after the class, please go to office hours or post on [piazza](zoom.html) instead.
-
-<iframe src="https://docs.google.com/spreadsheets/d/1WuhRKS-qzwv0Ox2-CkHf4cqnS9VPexZL7gqS4ikl9_k/edit?gid=0#gid=0" width="100%" height="600px"></iframe>

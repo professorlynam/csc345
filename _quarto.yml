@@ -25,6 +25,7 @@ website:
         - style.qmd
       - section: "Homeworks"
         contents: 
+        - hw1.qmd
       - section: "Topic 1: Review"
         contents:
         - text: "Syllabus Presentation"
