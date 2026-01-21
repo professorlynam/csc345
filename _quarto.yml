@@ -30,6 +30,8 @@ website:
         contents:
         - text: "Syllabus Presentation"
           href: "Syllabus Presentation.pptx"
+        - text: "Topic 1 Slides"
+          href: "Topic 1 Slides.pdf"
 
 format:
   html:
