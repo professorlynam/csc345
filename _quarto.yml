@@ -32,6 +32,10 @@ website:
           href: "Syllabus Presentation.pptx"
         - text: "Topic 1 Slides"
           href: "Topic 1 Slides.pdf"
+      - section: "Topic 2: Algorithm Analysis"
+        contents:
+        - text: "Topic 2 Slides"
+          href: "Topic 2 Slides.pdf"
 
 format:
   html:
