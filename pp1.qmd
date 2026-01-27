@@ -4,7 +4,7 @@ title: "Programming Project 1"
 
 # Directions
 
-This programming project is due February 9th at 3:30pm. You must turn in the program, including documentation, to Gradescope by the due date.
+This programming project is due February 10th at 3:30pm. You must turn in the program, including documentation, to Gradescope by the due date.
 
 # Introduction
 Once upon a time, there was a hero from a far-off land. Their name was Logic, and they travelled far and wide, in search of the evil villain, Lord Bug. They sought revenge for something, though only they knew exactly what Lord Bug had done to offend them. In any case, Logic arrived in the Kingdom of Tucson, and sought the aid of the king: he needed help searching for Lord Bug, and he had heard of the king’s wisdom and intellect. The king solemnly agreed to the request, and of course, as soon as Logic left the room, turned to you, his royal advisor (the one who was actually wise and intelligent). Now you’re on the hook to develop a searching system... And you only have two weeks to do it!
