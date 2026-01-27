@@ -1,0 +1,47 @@
+---
+title: "Programming Project 1"
+---
+
+# Directions
+
+This programming project is due February 9th at 3:30pm. You must turn in the program, including documentation, to Gradescope by the due date.
+
+# Introduction
+Once upon a time, there was a hero from a far-off land. Their name was Logic, and they travelled far and wide, in search of the evil villain, Lord Bug. They sought revenge for something, though only they knew exactly what Lord Bug had done to offend them. In any case, Logic arrived in the Kingdom of Tucson, and sought the aid of the king: he needed help searching for Lord Bug, and he had heard of the king’s wisdom and intellect. The king solemnly agreed to the request, and of course, as soon as Logic left the room, turned to you, his royal advisor (the one who was actually wise and intelligent). Now you’re on the hook to develop a searching system... And you only have two weeks to do it!
+
+# Problem Description
+Logic has a particular ability: they can teleport! But they haven’t trained their ability very well, so there is a significant limitation: when Logic tries to teleport to a destination they aren’t familiar with, they end up in a random spot within 50 miles of where they started.
+Now, Logic knows that Lord Bug is somewhere in a 100-mile by 100-mile square area, with the “center” square mile being (50, 50). This “center” square is where Logic starts the search from; this also the location of the throne room. The square mile immediately north of the “center” is (50, 49), and the square mile immediately east of the “center” is (51, 50). Logic wants a simple system to efficiently mark where they’ve been, and where they should search next.
+Fortunately, you’ve come up with a system for deciding how to search. The square mile that Logic randomly teleports to is called the RS. If the square miles to the north, south, east, and west of the RS (along with the RS itself) have been searched, then Logic should teleport back to the “center” square, and then to a new RS. Otherwise, they should search in the following pattern: the RS itself, then the spots, north, east, south, and west of the RS (in that order). Note that a spot should be skipped if it’s already been searched, or if it isn’t in the 100-mile by 100-mile square area. The “center” square is also considered to already have been searched.
+Traveling to an adjacent square mile takes 1 hour. Searching a square mile takes 2 hours. Logic returns to the “center” square mile to sleep every night. This is an issue because it can interrupt the search pattern, so your system will need to keep track of the number of hours to account for it. The search will begin at hour 0, and Logic can search for a maximum of 16 hours in a row before needing to return for sleep. Sleeping takes 8 hours exactly, and then they teleport to a new RS, and are able to search for a maximum of 16 hours. If there isn’t enough time to fully search another square mile before they have to return for sleep, they return and sleep early.
+
+# Assignment
+
+Write a well-documented, object-oriented program using Java 25 (it is recommended you do a fresh install of Java and whatever IDE you prefer to use) that takes in an input file of random spots, and outputs a list of searched spots and the number of hours the search took. Name this program: “search.java”. Your program will be graded on efficiency in addition to functionality. In particular, it should use a minimal amount of memory for the data structure used to keep track of the searched spots, and it should be able to quickly determine whether an adjacent spot has already been searched.
+
+# Input
+
+The input file, taken from a command line argument, will be a .txt file with a series of square mile coordinates, as shown in this ![example input file](program_1_example_input.txt). Your program should run with a command line such as this: “java search input.txt”. The first line of the input file will indicate whether the output coordinates should be given by row or by column (“row” or “col”, respectively).
+
+# Output
+
+Your program should output to the terminal (‘stdout’) the series of square mile coordinates that have been searched, given the input file. Each coordinate should be separated by a new line, similar to the input file. Finally, the last line of output should have the total number of hours taken for the search. For the given input file, as an example, the output would be:
+“0 0
+0 1
+1 0
+4 5
+4 6
+5 5
+5 6
+5 7
+6 5
+6 6
+48”
+
+# Hints
+
+You’ve recently learned about orthogonal lists, a data structure that would be perfect for this searching system! Since you must account for small input files which result in only a few spots searched, allocating a huge 100x100 array would be very inefficient. Consider how an appropriately set-up orthogonal list might help us solve this issue.
+You may also share input files with other students, as well as the associated terminal output, to ensure your code is well-tested.
+Finally, here is a table showing what the hour values would be after each square mile search, for the given sample input file.
+
+![](Program Project 1 example.png)

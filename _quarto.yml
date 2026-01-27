@@ -23,6 +23,7 @@ website:
       - section: "Programming Projects"
         contents: 
         - style.qmd
+        - pp1.qmd
       - section: "Homeworks"
         contents: 
         - hw1.qmd
