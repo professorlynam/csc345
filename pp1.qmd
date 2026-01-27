@@ -21,7 +21,7 @@ Write a well-documented, object-oriented program using Java 25 (it is recommende
 
 # Input
 
-The input file, taken from a command line argument, will be a .txt file with a series of square mile coordinates, as shown in this ![example input file](program_1_example_input.txt). Your program should run with a command line such as this: “java search input.txt”. The first line of the input file will indicate whether the output coordinates should be given by row or by column (“row” or “col”, respectively).
+The input file, taken from a command line argument, will be a .txt file with a series of square mile coordinates, as shown in this [example input file](program_1_example_input.txt). Your program should run with a command line such as this: “java search input.txt”. The first line of the input file will indicate whether the output coordinates should be given by row or by column (“row” or “col”, respectively).
 
 # Output
 
