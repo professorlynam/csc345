@@ -26,16 +26,27 @@ The input file, taken from a command line argument, will be a .txt file with a s
 # Output
 
 Your program should output to the terminal (‘stdout’) the series of square mile coordinates that have been searched, given the input file. Each coordinate should be separated by a new line, similar to the input file. Finally, the last line of output should have the total number of hours taken for the search. For the given input file, as an example, the output would be:
+
 “0 0
+
 0 1
+
 1 0
+
 4 5
+
 4 6
+
 5 5
+
 5 6
+
 5 7
+
 6 5
+
 6 6
+
 48”
 
 # Hints
