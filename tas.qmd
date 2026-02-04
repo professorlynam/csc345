@@ -12,6 +12,9 @@ Shown below is the office hours schedule. The in-person office hours are hosted 
 
 -   Moyeen Uddin (GTA).
 -   Rubin Yang (GTA).
+-   Michelle Asher (UGTA).
+-   Trey Harrison (UGTA).
+
 
 Interested in becoming a TA in the future? Check out [more information about what TAs do and how to apply](https://www.cs.arizona.edu/ugta).
 
