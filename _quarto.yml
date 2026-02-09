@@ -20,6 +20,7 @@ website:
         - text: "Syllabus"
           href: "syllabus.pdf"
         - academic-integrity.qmd
+        - tas.qmd
       - section: "Programming Projects"
         contents: 
         - style.qmd

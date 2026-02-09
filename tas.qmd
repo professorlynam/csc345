@@ -8,12 +8,14 @@ The best way to talk with a particular TA is via office hours, so check the sche
 
 # TAs and Office Hour Schedule
 
-Shown below is the office hours schedule. The in-person office hours are hosted in Gould-Simpson 934 unless otherwise specified. Prof Lynam's office hours are in GS 823.
+Shown below is the office hours schedule.
 
--   Moyeen Uddin (GTA). Fridays 11am-1pm. GS 934.
 -   Rubin Yang (GTA). Mondays 12pm-2pm, [zoom link](https://arizona.zoom.us/my/rubinyangoh)
--   Michelle Asher (UGTA). Thursdays 9am-11am. GS 934.
+-   Prof Lynam. Tuesdays 2pm-3pm. GS 823.
 -   Trey Harrison (UGTA). Wednesdays 11am-1pm. GS 934.
+-   Michelle Asher (UGTA). Thursdays 9am-11am. GS 934.
+-   Prof Lynam. Thursdays 2pm-3pm. GS 823.
+-   Moyeen Uddin (GTA). Fridays 11am-1pm. GS 934.
 
 
 Interested in becoming a TA in the future? Check out [more information about what TAs do and how to apply](https://www.cs.arizona.edu/ugta).
