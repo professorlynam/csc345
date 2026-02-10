@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Programming Project 1 – CSc 345 Analysis of Discrete Structures</title>
+<title>Homework 2 – CSc 345 Analysis of Discrete Structures</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./style.html">Programming Projects</a></li><li class="breadcrumb-item"><a href="./pp1.html">Programming Project 1</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./hw1.html">Homeworks</a></li><li class="breadcrumb-item"><a href="./hw2.html">Homework 2</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -152,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pp1.html" class="sidebar-item-text sidebar-link active">
+  <a href="./pp1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Programming Project 1</span></a>
   </div>
 </li>
@@ -175,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hw2.html" class="sidebar-item-text sidebar-link">
+  <a href="./hw2.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Homework 2</span></a>
   </div>
 </li>
@@ -232,21 +232,16 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#directions" id="toc-directions" class="nav-link active" data-scroll-target="#directions">Directions</a></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#problem-description" id="toc-problem-description" class="nav-link" data-scroll-target="#problem-description">Problem Description</a></li>
-  <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment">Assignment</a></li>
-  <li><a href="#input" id="toc-input" class="nav-link" data-scroll-target="#input">Input</a></li>
-  <li><a href="#output" id="toc-output" class="nav-link" data-scroll-target="#output">Output</a></li>
-  <li><a href="#hints" id="toc-hints" class="nav-link" data-scroll-target="#hints">Hints</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./style.html">Programming Projects</a></li><li class="breadcrumb-item"><a href="./pp1.html">Programming Project 1</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./hw1.html">Homeworks</a></li><li class="breadcrumb-item"><a href="./hw2.html">Homework 2</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Programming Project 1</h1>
+<h1 class="title">Homework 2</h1>
 </div>
 
 
@@ -265,43 +260,12 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="directions" class="level1">
 <h1>Directions</h1>
-<p>This programming project is due February 10th at 3:30pm. You must turn in the program, including documentation, to Gradescope by the due date.</p>
+<p>This homework is due February 17th at 3:30pm. If you need help, recall that Piazza and office hours are available. All homeworks are individual assignments, do your own work! Write complete, legible answers to the following questions, and submit them as a PDF on Gradescope. Be sure to assign pages to problems after you upload your PDF. This assignment is worth 95 points total.</p>
 </section>
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>Once upon a time, there was a hero from a far-off land. Their name was Logic, and they travelled far and wide, in search of the evil villain, Lord Bug. They sought revenge for something, though only they knew exactly what Lord Bug had done to offend them. In any case, Logic arrived in the Kingdom of Tucson, and sought the aid of the king: he needed help searching for Lord Bug, and he had heard of the king’s wisdom and intellect. The king solemnly agreed to the request, and of course, as soon as Logic left the room, turned to you, his royal advisor (the one who was actually wise and intelligent). Now you’re on the hook to develop a searching system… And you only have two weeks to do it!</p>
-</section>
-<section id="problem-description" class="level1">
-<h1>Problem Description</h1>
-<p>Logic has a particular ability: they can teleport! But they haven’t trained their ability very well, so there is a significant limitation: when Logic tries to teleport to a destination they aren’t familiar with, they end up in a random spot within 50 miles of where they started. Now, Logic knows that Lord Bug is somewhere in a 100-mile by 100-mile square area, with the “center” square mile being (50, 50). This “center” square is where Logic starts the search from; this also the location of the throne room. The square mile immediately north of the “center” is (49, 50), and the square mile immediately east of the “center” is (50, 51). Logic wants a simple system to efficiently mark where they’ve been, and where they should search next. Fortunately, you’ve come up with a system for deciding how to search. The square mile that Logic randomly teleports to is called the RS. If the square miles to the north, south, east, and west of the RS (along with the RS itself) have been searched, then Logic should teleport back to the “center” square, and then to a new RS. Otherwise, they should search in the following pattern: the RS itself, then the spots, north, east, south, and west of the RS (in that order). Note that a spot should be skipped if it’s already been searched, or if it isn’t in the 100-mile by 100-mile square area. The “center” square is also considered to already have been searched. Traveling to an adjacent square mile takes 1 hour. Searching a square mile takes 2 hours. Logic returns to the “center” square mile to sleep every night. This is an issue because it can interrupt the search pattern, so your system will need to keep track of the number of hours to account for it. The search will begin at hour 0, and Logic can search for a maximum of 16 hours in a row before needing to return for sleep. Sleeping takes 8 hours exactly, and then they teleport to a new RS, and are able to search for a maximum of 16 hours. If there isn’t enough time to fully search another square mile before they have to return for sleep, they return and sleep early.</p>
-</section>
-<section id="assignment" class="level1">
-<h1>Assignment</h1>
-<p>Write a well-documented, object-oriented program using Java 25 (it is recommended you do a fresh install of Java and whatever IDE you prefer to use) that takes in an input file of random spots, and outputs a list of searched spots and the number of hours the search took. Name this program: “search.java”. Your program will be graded on efficiency in addition to functionality. In particular, it should use a minimal amount of memory for the data structure used to keep track of the searched spots, and it should be able to quickly determine whether an adjacent spot has already been searched.</p>
-</section>
-<section id="input" class="level1">
-<h1>Input</h1>
-<p>The input file, taken from a command line argument, will be a .txt file with a series of square mile coordinates, as shown in this <a href="program_1_example_input.txt">example input file</a>. Your program should run with a command line such as this: “java search input.txt”. The first line of the input file will indicate whether the output coordinates should be given by row or by column (“row” or “col”, respectively).</p>
-</section>
-<section id="output" class="level1">
-<h1>Output</h1>
-<p>Your program should output to the terminal (‘stdout’) the series of square mile coordinates that have been searched, given the input file. Each coordinate should be separated by a new line, similar to the input file. Finally, the last line of output should have the total number of hours taken for the search. For the given input file, as an example, the output would be:</p>
-<p>“0 0</p>
-<p>0 1</p>
-<p>1 0</p>
-<p>4 5</p>
-<p>4 6</p>
-<p>5 5</p>
-<p>5 6</p>
-<p>5 7</p>
-<p>6 5</p>
-<p>6 6</p>
-<p>48”</p>
-</section>
-<section id="hints" class="level1">
-<h1>Hints</h1>
-<p>You’ve recently learned about orthogonal lists, a data structure that would be perfect for this searching system! Since you must account for small input files which result in only a few spots searched, allocating a huge 100x100 array would be very inefficient. Consider how an appropriately set-up orthogonal list might help us solve this issue. You may also share input files with other students, as well as the associated terminal output, to ensure your code is well-tested. Finally, here is a table showing what the hour values would be after each square mile search, for the given sample input file.</p>
-<p><img src="Program Project 1 example.png" class="img-fluid"></p>
+<section id="questions" class="level1">
+<h1>Questions</h1>
+<p><img src="hw2_pic1.png" class="img-fluid"> <img src="hw2_pic2.png" class="img-fluid"></p>
+<p><img src="hw2_pic3.png" class="img-fluid"> <img src="hw2_pic4.png" class="img-fluid"> <img src="hw2_pic5.png" class="img-fluid"> <img src="hw2_pic6.png" class="img-fluid"></p>
 
 
 </section>
