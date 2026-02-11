@@ -39,6 +39,10 @@ website:
         contents:
         - text: "Topic 2 Slides"
           href: "Topic 2 Slides.pdf"
+      - section: "Topic 3: Graphs"
+        contents:
+        - text: "Topic 3 Slides"
+          href: "Topic 3 Slides.pdf"
 
 format:
   html:
