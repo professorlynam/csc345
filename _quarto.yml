@@ -25,6 +25,7 @@ website:
         contents: 
         - style.qmd
         - pp1.qmd
+        - pp2.qmd
       - section: "Homeworks"
         contents: 
         - hw1.qmd
