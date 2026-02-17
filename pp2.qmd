@@ -1,0 +1,69 @@
+---
+title: "Programming Project 2"
+---
+
+# Directions
+
+This programming project is due March 5th at 3:30pm. You must turn in the program, including documentation, to Gradescope by the due date.
+
+# Introduction
+With the help of a certain royal advisor, the hero named Logic has found Lord Bug! Or at least, has tracked him to the entrance of an ancient Labyrinth, buried deep beneath the earth. Logic’s ability to teleport won’t be as useful here, and besides that, monsters and traps guard the rooms of the Labyrinth. The king has assigned an elite military force to help Logic explore the dungeon, but this involves complicated logistics. Fortunately, the king has (in his infinite wisdom) assigned his trusty royal advisor to deal with all that.
+
+# Problem Description
+The Labyrinth is divided into Rooms (vertices) and Hallways (Edges). The exploration strategy you and Logic decided upon is as follows: Logic explores using their teleportation to avoid monsters and traps, and backtracking when they need rest to report the results of their exploration to you. You will build a model of the Labyrinth, which you’ll use to help the military plan their efforts.
+
+Each Room has a cost associated with them, assigned based on how difficult Logic thinks it’ll be for the military to conquer it. Hallways have a similar cost. There are two special Rooms: the Starting Room (SR) and Lord Bug’s Lair (BL). The cost for SR and BL is 0.
+
+Your Labyrinth model should be able to do the following:
+1. Efficiently represent the Labyrinth’s Graph, using either an adjacency list or adjacency matrix. Include in your documentation for your program an explanation for why you choose the one you choose, and whether you would make the same choice in retrospective (and why you would or wouldn’t).
+2. Produce a Minimal-Cost-Spanning-Tree (MCST) of the Graph. This should only take into account Hallway costs, since the military wants an option to conquer all of the Rooms regardless of the costs. If there is a choice between which of two edges to add to the MCST, choose the edge that with the Rooms that are alphabetically closer to “A,” as described in the Output section.
+3. Produce the minimal-cost path from the SR to BL. This is for if the military wants to focus their efforts on just finding and defeating Lord Bug. As a result, you must take Room costs into account for this path. If there is a choice between which of two edges to add to the path, choose the edge that with the Rooms that are alphabetically closer to “A,” as described in the Output section.
+
+# Assignment
+
+Write a well-documented, object-oriented program using Java 25 (it is recommended you do a fresh install of Java and whatever IDE you prefer to use) that takes in an input file of edges and costs, and outputs a list of edges represented an MCST of the graph, and the minimal-cost path from the SR to the BL. Name this program: “labyrinth.java”. Your program will be graded on functionality, whether you implemented an adjacency list or matrix to represent your graph (and the documentation associated with it), and on the style guide requirements.
+
+# Input
+
+The input file, taken from a command line argument, will be a .txt file with a series of edge lists, with their associated Hallway and Room costs, as shown in this [example input file](program_2_example_input.txt). The Room cost on each line represents the room cost of the second Room listed on the line. Your program should run with a command line such as this: “java labyrinth input.txt”.
+
+# Output
+
+Your program should output to the terminal (‘stdout’) the series of edges associated with the MCST separated by newlines, given the input file. The printing order of the edges should be determined by cost first, smallest to largest. For edges with the same cost, sort alphabetically based on the Rooms associated with each edge. Assume that the Room closest to “A” in the alphabet is the Room to “represent” the vertex pair associated with each edge. For ties, use the other Room in the vertex pair. After the MCST is finished printing, print “end MCST\n”.
+
+Then, output to the terminal the series of edges associated with the minimal-cost path from the SR to BL, separated by newlines. This path should start at the SR, and end at the BL, with the edges printed in the order they would be traversed. Once the path is finished printing, print the total cost of the path.
+
+The output for the example input file would be:
+“A, SR
+
+A, B
+
+B, C
+
+B, D
+
+BL, E
+
+D, E
+
+End MCST
+
+SR, C
+
+C, E
+
+E, BL
+
+14”
+
+
+# Hints
+
+I recommend saving the third requirement for last. There are “vertex costs” associated with that requirement, which might require you to transform your graph, to shift those costs from the vertices to the edges, and then run an appropriate algorithm to find the minimal-cost path.
+
+You may also share input files with other students, as well as the associated terminal output, to ensure your code is well-tested.
+
+Finally, here is an image of the graph used in the input example file. The Rooms have their costs in parentheses inside the nodes.
+
+
+![](Program Project 2 example.png)
