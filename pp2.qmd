@@ -34,6 +34,7 @@ Your program should output to the terminal (‘stdout’) the series of edges as
 Then, output to the terminal the series of edges associated with the minimal-cost path from the SR to BL, separated by newlines. This path should start at the SR, and end at the BL, with the edges printed in the order they would be traversed. Once the path is finished printing, print the total cost of the path.
 
 The output for the example input file would be:
+
 “A, SR
 
 A, B
