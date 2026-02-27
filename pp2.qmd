@@ -40,15 +40,15 @@ The output for the example input file would be:
 
 “A, SR
 
+B, D
+
+D, E
+
 A, B
 
 B, C
 
-B, D
-
 BL, E
-
-D, E
 
 End MCST
 
