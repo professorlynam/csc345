@@ -1,5 +1,5 @@
 ---
-title: "Programming Project 2"
+title: "Programming Project 3"
 ---
 
 # Directions
@@ -12,14 +12,16 @@ At last, the hero named Logic has cornered Lord Bug! The final battle ensues, wi
 # Problem Description
 The fight between Logic and Lord Bug will take place over several Rounds. Each Round will require Logic to prepare to defend against a certain number of Attacks. Logic’s Armor and Shield can handle some Attacks, but if they’re about to be overwhelmed, they must teleport away.
 
-
 1. Each Attack has a Type, Damage, and Speed associated with it. The Types are “Fire,” “Ice,” and “Lightning,” the Damage is an integer between 1 and 1000000 (inclusive), and the Speed is a float between 0 and 1 (inclusive). The Attacks are sent at Logic in order of their Speed, with Attacks closer to 0 arriving first, and Attacks closer to 1 arriving last. There are no duplicate values for Speed.
 
 2. Logic must decide whether to use his Shield to block an Attack (which blocks the Attack completely, but can only be used 5 times per Round), his Armor to absorb the Attack (which reduces the Damage of the Attack by 30%, unless it is a Lightning Attack), or Teleport away to dodge the Attack (blocking the attack completely, but ending the Round). To decide what to do, Logic will keep track of three sorted arrays of Attacks. The first array (A1) should be sorted first by Speed (lowest first), to track which order the attacks are coming in. The second array (A2) should be sorted by Damage (highest first), to see if Logic needs to save his Shield to block more powerful attacks. The third array (A3) should be sorted by Type, with Lightning first, then Ice, then Fire, to see if Lightning Attacks are still oncoming.
 
 The decision process for deciding whether to use his Shield, Armor, or Teleport for each Attack is as follows: 
-1. If the Attack is Lightning, Logic will try to block it with their Shield if it is available, otherwise they will Teleport. 
-2. If the Attack is Fire or Ice, Logic will either use their Shield if there isn’t an Attack with Damage > 500000 remaining in A2, or if there are no more Lightning Attacks remaining in A3. Otherwise they will use their Armor. 
+
+1. If the Attack is Lightning, Logic will try to block it with their Shield if it is available, otherwise they will Teleport.
+
+2. If the Attack is Fire or Ice, Logic will either use their Shield if there isn’t an Attack with Damage > 500000 remaining in A2, or if there are no more Lightning Attacks remaining in A3. Otherwise they will use their Armor.
+
 3. Regardless of Attack Type, if a total of 1200000 or more Damage in Attacks would reach Logic in the Round, he will Shield if he can, or Teleport if he cannot use his Shield. Note that the Attacks arrive in the order of A1. A1, A2, and A3 should all be updated once an Attack is resolved, removing the resolved Attack from each array.
 
 Efficiency in sorting the arrays will be key to Logic’s survival. The royal advisor isn’t sure what will work best for each array’s data type, but they remember a few options from their days at UA (University of (future royal) Advisors). They will have to pick efficient (and different) sorting algorithms for each array type. Note that the sorting algorithm chosen may or may not retain all of the information from the original Attack, as long as they help produce the correct result for the Round.
