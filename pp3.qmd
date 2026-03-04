@@ -1,0 +1,51 @@
+---
+title: "Programming Project 2"
+---
+
+# Directions
+
+This programming project is due March 26th at 3:30pm. You must turn in the program, including documentation, to Gradescope by the due date.
+
+# Introduction
+At last, the hero named Logic has cornered Lord Bug! The final battle ensues, with Lord Bug sending a constant barrage of chaotic magical attacks at Logic. Logic must decide which attacks to prioritize defending against. Fortunately, the king’s trusty royal advisor anticipated this fight, and schooled Logic on a way to sort Lord Bug’s attacks in order of priority. The king really needs to pay his royal advisor more.
+
+# Problem Description
+The fight between Logic and Lord Bug will take place over several Rounds. Each Round will require Logic to prepare to defend against a certain number of Attacks. Logic’s Armor and Shield can handle some Attacks, but if they’re about to be overwhelmed, they must teleport away.
+
+
+1. Each Attack has a Type, Damage, and Speed associated with it. The Types are “Fire,” “Ice,” and “Lightning,” the Damage is an integer between 1 and 1000000 (inclusive), and the Speed is a float between 0 and 1 (inclusive). The Attacks are sent at Logic in order of their Speed, with Attacks closer to 0 arriving first, and Attacks closer to 1 arriving last. There are no duplicate values for Speed.
+
+2. Logic must decide whether to use his Shield to block an Attack (which blocks the Attack completely, but can only be used 5 times per Round), his Armor to absorb the Attack (which reduces the Damage of the Attack by 30%, unless it is a Lightning Attack), or Teleport away to dodge the Attack (blocking the attack completely, but ending the Round). To decide what to do, Logic will keep track of three sorted arrays of Attacks. The first array (A1) should be sorted first by Speed (lowest first), to track which order the attacks are coming in. The second array (A2) should be sorted by Damage (highest first), to see if Logic needs to save his Shield to block more powerful attacks. The third array (A3) should be sorted by Type, with Lightning first, then Ice, then Fire, to see if Lightning Attacks are still oncoming.
+
+The decision process for deciding whether to use his Shield, Armor, or Teleport for each Attack is as follows: 
+1. If the Attack is Lightning, Logic will try to block it with their Shield if it is available, otherwise they will Teleport. 
+2. If the Attack is Fire or Ice, Logic will either use their Shield if there isn’t an Attack with Damage > 500000 remaining in A2, or if there are no more Lightning Attacks remaining in A3. Otherwise they will use their Armor. 
+3. Regardless of Attack Type, if a total of 1200000 or more Damage in Attacks would reach Logic in the Round, he will Shield if he can, or Teleport if he cannot use his Shield. Note that the Attacks arrive in the order of A1. A1, A2, and A3 should all be updated once an Attack is resolved, removing the resolved Attack from each array.
+
+Efficiency in sorting the arrays will be key to Logic’s survival. The royal advisor isn’t sure what will work best for each array’s data type, but they remember a few options from their days at UA (University of (future royal) Advisors). They will have to pick efficient (and different) sorting algorithms for each array type. Note that the sorting algorithm chosen may or may not retain all of the information from the original Attack, as long as they help produce the correct result for the Round.
+
+
+# Assignment
+
+Write a well-documented, object-oriented program using Java 25 (it is recommended you do a fresh install of Java and whatever IDE you prefer to use) that takes in an input file of Attacks, and outputs the results of each Round. You must implement three different efficient sorting algorithms for each of three arrays generated from the input, given the problem context. The sorting algorithms you choose must have been covered in-class. You must include in your documentation why you chose the algorithms you did. If you would have tried different algorithms in retrospect, include an explanation for why you think the algorithms you chose were not as efficient as the ones you would’ve tried. You are not allowed to use any third-party or built-in library sorting algorithms. Name this program: “sorting.java”. Your program will be graded on functionality, sorting algorithm efficiency (and the documentation explaining your choices of sorting algorithm), and on the style guide requirements.
+
+# Input
+
+The input file, taken from a command line argument, will be a .txt file with a series of Attacks for a given Round, as shown in this [example input file](program_3_example_input.txt). Here is also the same input file, but with the Attacks sorted as they would be in [A1](program_3_example_input_a1.txt), [A2](program_3_example_input_a2.txt), and [A3](program_3_example_input_a3.txt) Your program should run with a command line such as this: “java sorting input.txt”. Note that while the grading test cases we’ll use for this will have relatively few Attacks, you must assume that the number of Attacks could potentially be in the thousands for the purposes of choosing your sorting algorithms.
+
+# Output
+
+Your program should output to the terminal (‘stdout’) the result of the Round, given the input file. The result of the Round is either “Logic had to Teleport away”, if Logic was forced to Teleport, or “Logic took X Damage”, where X is the total amount of Damage that reached Logic in the course of the Round.
+
+The output for the example input file would be:
+
+“Logic took 990587.5 Damage”
+
+Here is another [A1 array](program_3_example_output_explanation.txt) for the input file, with comments noting the result of each Attack.
+
+
+# Hints
+
+I recommend reviewing all of the sorting algorithms we’ve covered, and carefully considering which ones would be most efficient for each type of input. Keep in mind what information is necessary to calculate the result of each Round, and what isn’t.
+
+You may also share input files with other students, as well as the associated terminal output, to ensure your code is well-tested.

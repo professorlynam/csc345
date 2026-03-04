@@ -1,0 +1,9 @@
+Ice, 1, .000000001 # Logic will use their Armor and take .7 Damage
+Ice, 315124, .15692 # Logic will use their Armor and take 220586.8 Damage
+Fire, 500000, .23491 # Logic will use their Armor and take 350000 Damage
+Lightning, 900000, .25 # Logic will use their Shield and take 0 Damage
+Fire, 1000000, .5912351 # Logic will use their Shield and take 0 Damage
+Fire, 600000, .91 # Logic will use their Armor and take 420000 Damage
+Ice, 600000, .911 # Logic will use their Shield and take 0 Damage.
+Lightning, 900000, .96 # Logic will use their Shield and take 0 Damage.
+Lightning, 400000, 1 # Logic will use their Shield and take 0 Damage.
