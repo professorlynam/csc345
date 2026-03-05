@@ -4,7 +4,7 @@ title: "Programming Project 2"
 
 # Directions
 
-This programming project is due March 5th at 3:30pm. You must turn in the program, including documentation, to Gradescope by the due date.
+This programming project is due March 6th at 3:30pm. You must turn in the program, including documentation, to Gradescope by the due date.
 
 # Introduction
 With the help of a certain royal advisor, the hero named Logic has found Lord Bug! Or at least, has tracked him to the entrance of an ancient Labyrinth, buried deep beneath the earth. Logic’s ability to teleport won’t be as useful here, and besides that, monsters and traps guard the rooms of the Labyrinth. The king has assigned an elite military force to help Logic explore the dungeon, but this involves complicated logistics. Fortunately, the king has (in his infinite wisdom) assigned his trusty royal advisor to deal with all that.
