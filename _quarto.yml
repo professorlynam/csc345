@@ -49,6 +49,10 @@ website:
         contents:
         - text: "Topic 4 Slides"
           href: "Topic 4 Slides.pdf"
+      - section: "Topic 6: Searching Linear Structures"
+        contents:
+        - text: "Topic 6 Slides"
+          href: "Topic 6 Slides.pdf"
 
 format:
   html:
