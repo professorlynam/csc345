@@ -4,7 +4,7 @@ title: "Homework 3"
 
 # Directions
 
-This homework is due April 2nd at 3:30pm. If you need help, recall that Piazza and office hours are available. All homeworks are individual assignments, do your own work! Write complete, legible answers to the following questions, and submit them as a PDF on Gradescope. Be sure to assign pages to problems after you upload your PDF. This assignment is worth 130 points total.
+This homework is due April 2nd at 3:30pm. If you need help, recall that Piazza and office hours are available. All homeworks are individual assignments, do your own work! Write complete, legible answers to the following questions, and submit them as a PDF on Gradescope. Be sure to assign pages to problems after you upload your PDF. This assignment is worth 115 points total.
 
 # Questions
 ![](hw3_pic1.png)
