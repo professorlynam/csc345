@@ -1,5 +1,5 @@
 The Duke's Department of Fair Judgments; 6; 100
-The Crown Prince's Personal Sport Enthusiast Club; 
+The Crown Prince's Personal Sport Enthusiast Club; 1; 100
 The Prince's Department of Bridges (and to a lesser extent, tunnels); .5; 25
 The Princess's Personal Agency for the Collection of Fine Artwork; 1.5; 100
 The Queen's Office of Diplomatic Coordination; 4; 100
