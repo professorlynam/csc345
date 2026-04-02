@@ -27,6 +27,7 @@ website:
         - pp1.qmd
         - pp2.qmd
         - pp3.qmd
+        - pp4.qmd
       - section: "Homeworks"
         contents: 
         - hw1.qmd
