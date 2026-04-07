@@ -63,6 +63,10 @@ website:
         contents:
         - text: "Topic 7 Slides"
           href: "Topic 7 Slides.pdf"
+      - section: "Topic 8: Beyond BSTs"
+        contents:
+        - text: "Topic 8 Slides"
+          href: "Topic 8 Slides.pdf"
 
 format:
   html:
