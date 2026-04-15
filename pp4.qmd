@@ -30,7 +30,7 @@ Once you’re done building the AVL tree, you want a way to quickly traverse it 
 
 # Assignment
 
-Write a well-documented, object-oriented program using Java 25 (it is recommended you do a fresh install of Java and whatever IDE you prefer to use) that takes in an input file of budget proposals, and outputs the in-order traversal of the resulting AVL tree, and the height of the tree (described in Output). You must implement an efficient rotation method for inserting new nodes into your AVL tree. You must include in your documentation why you chose the algorithms you did. Name this program: “avl_tree.java”. Your program will be graded on functionality, rotation method efficiency, and on the style guide requirements.
+Write a well-documented, object-oriented program using Java 25 (it is recommended you do a fresh install of Java and whatever IDE you prefer to use) that takes in an input file of budget proposals, and outputs the in-order traversal of the resulting AVL tree, and the height of the tree (described in Output). You must implement an efficient rotation method for inserting new nodes into your AVL tree. You must include in your documentation how your rotation method works, and why you choose to implement it in the way you did. Name this program: “avl_tree.java”. Your program will be graded on functionality, rotation method efficiency, and on the style guide requirements.
 
 # Input
 
