@@ -68,6 +68,14 @@ website:
         contents:
         - text: "Topic 8 Slides"
           href: "Topic 8 Slides.pdf"
+      - section: "Topic 9: Algorithm Families"
+        contents:
+        - text: "Topic 9 Slides"
+          href: "Topic 9 Slides.pdf"
+      - section: "Topic 10: P vs NP"
+        contents:
+        - text: "Topic 10 Slides"
+          href: "Topic 10 Slides.pdf"
 
 format:
   html:
