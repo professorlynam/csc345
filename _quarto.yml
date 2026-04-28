@@ -76,6 +76,10 @@ website:
         contents:
         - text: "Topic 10 Slides"
           href: "Topic 10 Slides.pdf"
+      - section: "Topic 11: Review"
+        contents:
+        - text: "Topic 11 Slides"
+          href: "Topic 11.pdf"
 
 format:
   html:
