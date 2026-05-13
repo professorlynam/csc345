@@ -1,5 +1,5 @@
 ---
-title: "files and strings (slides)"
+title: "CSc 345 Final Exam"
 format: revealjs
 slide-number: true
 df-print: kable
