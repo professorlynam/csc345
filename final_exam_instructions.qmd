@@ -1,3 +1,11 @@
+---
+title: "files and strings (slides)"
+format: revealjs
+slide-number: true
+df-print: kable
+---
+
+# CSc 345 - Final Exam
 
 ## Final Exam Instructions
 
