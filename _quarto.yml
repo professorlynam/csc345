@@ -24,62 +24,31 @@ website:
       - section: "Programming Projects"
         contents: 
         - style.qmd
-        - pp1.qmd
-        - pp2.qmd
-        - pp3.qmd
-        - pp4.qmd
       - section: "Homeworks"
         contents: 
         - hw1.qmd
-        - hw2.qmd
-        - hw3.qmd
-        - hw4.qmd
       - section: "Topic 1: Review"
         contents:
-        - text: "Syllabus Presentation"
-          href: "Syllabus Presentation.pptx"
-        - text: "Topic 1 Slides"
-          href: "Topic 1 Slides.pdf"
       - section: "Topic 2: Algorithm Analysis"
         contents:
-        - text: "Topic 2 Slides"
-          href: "Topic 2 Slides.pdf"
       - section: "Topic 3: Graphs"
         contents:
-        - text: "Topic 3 Slides"
-          href: "Topic 3 Slides.pdf"
       - section: "Topic 4: Internal Sort"
         contents:
-        - text: "Topic 4 Slides"
-          href: "Topic 4 Slides.pdf"
       - section: "Topic 5: Review"
         contents:
-        - text: "Topic 5 Slides"
-          href: "Topic 5 Slides.pdf"
       - section: "Topic 6: Searching Linear Structures"
         contents:
-        - text: "Topic 6 Slides"
-          href: "Topic 6 Slides.pdf"
       - section: "Topic 7: BSTs"
         contents:
-        - text: "Topic 7 Slides"
-          href: "Topic 7 Slides.pdf"
       - section: "Topic 8: Beyond BSTs"
         contents:
-        - text: "Topic 8 Slides"
-          href: "Topic 8 Slides.pdf"
       - section: "Topic 9: Algorithm Families"
         contents:
-        - text: "Topic 9 Slides"
-          href: "Topic 9 Slides.pdf"
       - section: "Topic 10: P vs NP"
         contents:
-        - text: "Topic 10 Slides"
-          href: "Topic 10 Slides.pdf"
       - section: "Topic 11: Review"
         contents:
-        - text: "Topic 11 Slides"
-          href: "Topic 11.pdf"
 
 format:
   html:
