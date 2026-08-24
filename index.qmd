@@ -9,11 +9,12 @@ website:
 
 The course is an introduction to and analysis of algorithms and characteristics of discrete structures. Course topics include algorithm analysis techniques, recurrence relations, structural induction, hierarchical structures, graphs, hashing, and sorting.
 
--   D2L: [d2l](https://d2l.arizona.edu/d2l/home/1725364)
--   Gradescope: [Gradescope](https://www.gradescope.com/courses/1221227) 
--   Piazza: [Piazza](https://piazza.com/arizona/spring2026/csc345/home)
+-   D2L: [d2l](https://d2l.arizona.edu/d2l/home/1811180)
+-   Gradescope: [Gradescope](https://www.gradescope.com/courses/1357089) 
+-   Piazza: [Piazza](https://piazza.com/arizona/fall2026/csc345001)
 -   Textbook by OpenDSA Project: [Textbook](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/)
 -   Textbook by Clifford Shaffer: [Textbook](https://people.cs.vt.edu/shaffer/Book/JAVA3elatest.pdf)
+
 
 Where to start:
 
@@ -30,4 +31,4 @@ Where to start:
 
     -   Office hours (open door, drop in, my office [GS](https://goo.gl/maps/h8Vyf7RNQiMAScDY6) 823):
 
-         -    `Tuesday and Thursday 2:00pm-3:00pm
+         -    `Tuesday and Thursday TBD
