@@ -29,7 +29,8 @@ website:
         - hw1.qmd
       - section: "Topic 1: Review"
         contents:
-        - "Syllabus Presentation.pdf"
+        - text: "Syllabus Presentation"
+          href: "Syllabus Presentation.pdf"
       - section: "Topic 2: Algorithm Analysis"
         contents:
       - section: "Topic 3: Graphs"
