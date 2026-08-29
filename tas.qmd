@@ -8,9 +8,13 @@ The best way to talk with a particular TA is via office hours, so check the sche
 
 # TAs and Office Hour Schedule
 
-The office hours schedule will be shown/updated below as we create it.
+The office hours schedule will be shown/updated below as we create it. All TA office hours will be held in GS 942.
 
+-   Moyeen: Friday 1pm-3pm
 
+-   Xuecheng: 9am-10am Wednesday and Friday
+
+-   Akhond: Monday 1pm-3pm
 
 Interested in becoming a TA in the future? Check out [more information about what TAs do and how to apply](https://www.cs.arizona.edu/ugta).
 
