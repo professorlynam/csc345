@@ -40,6 +40,8 @@ website:
           href: "Topic 2 Slides.pdf"
       - section: "Topic 3: Graphs"
         contents:
+        - text: "Topic 3 Slides"
+          href: "Topic 3 Slides.pdf"
       - section: "Topic 4: Internal Sort"
         contents:
       - section: "Topic 5: Review"
