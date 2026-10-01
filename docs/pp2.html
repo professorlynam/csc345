@@ -333,7 +333,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Your Labyrinth model should be able to do the following:</p>
 <ol type="1">
 <li><p>Efficiently represent the Labyrinth’s Graph, using either an adjacency list or adjacency matrix. Include in your documentation for your program an explanation for why you choose the one you choose, and whether you would make the same choice in retrospective (and why you would or wouldn’t).</p></li>
-<li><p>Produce a Minimal-Cost-Spanning-Tree (MCST) of the Graph. This should only take into account Hallway costs, since the military wants an option to conquer all of the Rooms regardless of the costs. If there is a choice between which of two edges to add to the MCST, choose the edge that with the Rooms that are alphabetically closer to “A,” as described in the Output section.</p></li>
+<li><p>Produce a Minimal-Cost-Spanning-Tree (MCST) of the Graph. This should only take into account Hallway costs, since the military wants an option to conquer all of the Rooms regardless of the costs. If there is a choice between which of two edges to add to the MCST, choose the edge with the Rooms that are alphabetically closer to “A,” as described in the Output section.</p></li>
 <li><p>Produce the minimal-cost path from the SR to BL. This is for if the military wants to focus their efforts on just finding and defeating Lord Bug. As a result, you must take Room costs into account for this path. If there is a choice between which of two edges to add to the path, choose the edge that with the Rooms that are alphabetically closer to “A,” as described in the Output section.</p></li>
 </ol>
 </section>
@@ -347,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="output" class="level1">
 <h1>Output</h1>
-<p>Your program should output to the terminal (‘stdout’) the series of edges associated with the MCST separated by newlines, given the input file. The printing order of the edges should be determined by cost first, smallest to largest. For edges with the same cost, sort alphabetically based on the Rooms associated with each edge. Assume that the Room closest to “A” in the alphabet is the Room to “represent” the vertex pair associated with each edge. For ties, use the other Room in the vertex pair. After the MCST is finished printing, print “end MCST”.</p>
+<p>Your program should output to the terminal (‘stdout’) the series of edges associated with the MCST separated by newlines, given the input file. The printing order of the edges should be determined by cost first, smallest to largest. For edges with the same cost, sort alphabetically based on the Rooms associated with each edge. Assume that the Room closest to “A” in the alphabet is the Room to “represent” the vertex pair associated with each edge. For ties, use the other Room in the vertex pair. After the MCST is finished printing, print “End MCST”.</p>
 <p>Then, output to the terminal the series of edges associated with the minimal-cost path from the SR to BL, separated by newlines. This path should start at the SR, and end at the BL, with the edges printed in the order they would be traversed. Once the path is finished printing, print the total cost of the path.</p>
 <p>The output for the example input file would be:</p>
 <p>“A, SR</p>

@@ -32,7 +32,7 @@ The input file, taken from a command line argument, will be a .txt file with a s
 
 # Output
 
-Your program should output to the terminal (‘stdout’) the series of edges associated with the MCST separated by newlines, given the input file. The printing order of the edges should be determined by cost first, smallest to largest. For edges with the same cost, sort alphabetically based on the Rooms associated with each edge. Assume that the Room closest to “A” in the alphabet is the Room to “represent” the vertex pair associated with each edge. For ties, use the other Room in the vertex pair. After the MCST is finished printing, print “end MCST\n”.
+Your program should output to the terminal (‘stdout’) the series of edges associated with the MCST separated by newlines, given the input file. The printing order of the edges should be determined by cost first, smallest to largest. For edges with the same cost, sort alphabetically based on the Rooms associated with each edge. Assume that the Room closest to “A” in the alphabet is the Room to “represent” the vertex pair associated with each edge. For ties, use the other Room in the vertex pair. After the MCST is finished printing, print “End MCST\n”.
 
 Then, output to the terminal the series of edges associated with the minimal-cost path from the SR to BL, separated by newlines. This path should start at the SR, and end at the BL, with the edges printed in the order they would be traversed. Once the path is finished printing, print the total cost of the path.
 
