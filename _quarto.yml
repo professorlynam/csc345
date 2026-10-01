@@ -46,6 +46,8 @@ website:
           href: "Topic 3 Slides.pdf"
       - section: "Topic 4: Internal Sort"
         contents:
+        - text: "Topic 4 Slides"
+          href: "Topic 4 Slides.pdf"
       - section: "Topic 5: Review"
         contents:
       - section: "Topic 6: Searching Linear Structures"
