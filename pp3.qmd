@@ -4,7 +4,7 @@ title: "Programming Project 3"
 
 # Directions
 
-This programming project is due March 26th at 3:30pm. You must turn in the program, including documentation, to Gradescope by the due date.
+This programming project is due October 27th at 2:00pm. You must turn in the program, including documentation, to Gradescope by the due date.
 
 # Introduction
 At last, the hero named Logic has cornered Lord Bug! The final battle ensues, with Lord Bug sending a constant barrage of chaotic magical attacks at Logic. Logic must decide which attacks to prioritize defending against. Fortunately, the king’s trusty royal advisor anticipated this fight, and schooled Logic on a way to sort Lord Bug’s attacks in order of priority. The king really needs to pay his royal advisor more.
