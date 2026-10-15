@@ -51,6 +51,8 @@ website:
           href: "Topic 4 Slides.pdf"
       - section: "Topic 5: Review"
         contents:
+        - text: "Topic 5 Slides"
+          href: "Topic 5 Slides (Midterm 1).pdf"
       - section: "Topic 6: Searching Linear Structures"
         contents:
       - section: "Topic 7: BSTs"
