@@ -31,6 +31,7 @@ website:
         contents: 
         - hw1.qmd
         - hw2.qmd
+        - hw3.qmd
       - section: "Topic 1: Review"
         contents:
         - text: "Syllabus Presentation"
