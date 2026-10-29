@@ -60,6 +60,8 @@ website:
           href: "Topic 6 Slides.pdf"
       - section: "Topic 7: BSTs"
         contents:
+        - text: "Topic 7 Slides"
+          href: "Topic 7 Slides.pdf"
       - section: "Topic 8: Beyond BSTs"
         contents:
       - section: "Topic 9: Algorithm Families"
