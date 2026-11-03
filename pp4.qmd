@@ -4,7 +4,7 @@ title: "Programming Project 4"
 
 # Directions
 
-This programming project is due April 21st at 3:30pm. You must turn in the program, including documentation, to Gradescope by the due date.
+This programming project is due Novemeber 19th at 2:00pm. You must turn in the program, including documentation, to Gradescope by the due date.
 
 # Introduction
 Lord Bug has been defeated! But before Logic (and you, the trusty royal advisor) can celebrate, the King swoops in with his men, and notes the huge pile of stolen gold Lord Bug kept in his lair. While Logic is promised a generous reward, you are promised a huge headache as the distribution of this wealth is placed squarely on your shoulders by the King. You know that the King’s never even heard the term ‘market saturation,’ and the kingdom’s not even on the gold standard anymore. Worst of all, the King demands you prepare an easy-to-understand presentation for the entire court in defense of your proposed wealth distribution plan!
