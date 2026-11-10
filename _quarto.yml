@@ -65,6 +65,8 @@ website:
           href: "Topic 7 Slides.pdf"
       - section: "Topic 8: Beyond BSTs"
         contents:
+        - text: "Topic 8 Slides"
+          href: "Topic 8 Slides.pdf"
       - section: "Topic 9: Algorithm Families"
         contents:
       - section: "Topic 10: P vs NP"
